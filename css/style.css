@@ -1,8 +1,4 @@
-/*Author    : Wafa Rifqi Anafin*/
-/*Github    : https://github.com/wafarifki*/
-/*Facebook  : https://facebook.com/wafarifkianafin*/
-/*Instagram : https://instagram.com/wafarifki_*/
-/*Website   : https://wafarifki.tk*/
+/*Rewrite by    : fatur285*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
@@ -10,7 +6,7 @@ body,
 html {
   -webkit-tap-highlight-color: transparent;
   height: 100%;
-  background: linear-gradient(-45deg, #f1ca89, #f29191, #907fa4, #4aa96c);
+  background: linear-gradient(-45deg, #5bbdff, #f164a6, #e471bd, #9b41d6);
   background-size: 400% 400%;
   animation: animasiBegron 15s ease infinite;
   width: 100%;
