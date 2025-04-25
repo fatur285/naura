@@ -63,7 +63,7 @@
           document.write("<center>");
           var hari = new Date();
           var jam = hari.getHours();
-          if (jam >= 0 && jam < 12) {
+          if (jam >= 6 && jam < 12) {
             document.write(
               "<h1 class='ucapan'>Pagi Princess!</h1><p class='isiucapan'>Percaya deh, orang pertama yang aku cari pas bangun tidur itu kamu sayang. <br/> I Love U <3<p>"
             );
@@ -75,9 +75,13 @@
             document.write(
               "<h1 class='ucapan'>Sore Princess!</h1><p class='isiucapan'>Udah sore tu mandi cinta! bukan main hp terus. <br/> I Love U My Favorite Girl <3<p>"
             );
-          } else {
+          } else if (jam >= 18 && jam <= 3) {
             document.write(
               "<h1 class='ucapan'>Malem Princess!</h1><p class='isiucapan'>Jangan sering begadang ya sayang, nanti kalo kamu sakit aku sedih, marah, ga sayang kamu lagi!!! oke? <br/> I Love U Princess <3<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>Subuh Princess!</h1><p class='isiucapan'>Kamu begadang lagi ya? mandi sana siap - siap sholat subuh. <br/> Love U Sayang <3<p>"
             );
           }
           document.write("</center>");
