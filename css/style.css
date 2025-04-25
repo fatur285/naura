@@ -6,7 +6,7 @@ body,
 html {
   -webkit-tap-highlight-color: transparent;
   height: 100%;
-  background: linear-gradient(-45deg, #5bbdff, #f164a6, #e471bd, #9b41d6);
+  background: linear-gradient(-45deg, #5482ff, #f164a6, #415dff,rgb(250, 23, 201));
   background-size: 400% 400%;
   animation: animasiBegron 15s ease infinite;
   width: 100%;
@@ -22,15 +22,15 @@ html {
 }
 
 .kontener2 h1 {
-  color: #f5f5f5;
+  color: #ffffff;
 }
 
 .kontener2 .tombol {
   padding: 10px 30px 10px 30px;
   background: transparent;
-  color: #BCCFD7;
+  color: #ffffff;
   outline: none;
-  border: 2px solid #BCCFD7;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
@@ -39,10 +39,10 @@ html {
 .kontener2 .tombol:hover {
   cursor: pointer;
   padding: 10px 30px 10px 30px;
-  background: #BCCFD7;
-  color: #f5f5f5;
+  background: #ffffff42;
+  color: #ffffff;
   outline: none;
-  border: 2px solid #BCCFD7;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
@@ -55,9 +55,9 @@ html {
 
 .dalemnya_kontener {
   text-align: center;
-  background: #867ae9;
+  background: #2b2b2b;
   width: 100%;
-  height: 94%;
+  height: 95%;
   overflow: hidden;
   position: relative;
   border-radius: 10px 10px 10px 10px;
@@ -81,11 +81,11 @@ section .ucapan {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
-  color: #404040;
+  color: #3d3d3d;
 }
 
 section .isiucapan {
-  color: #707070;
+  color: #3d3d3d;
   width: 82%;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
@@ -93,7 +93,7 @@ section .isiucapan {
 }
 
 section.halaman1 {
-  background: #ff96ad;
+  background: #5ca8ff;
   -webkit-transition-delay: 0s;
 }
 
@@ -109,7 +109,7 @@ section.halaman1 {
 }
 
 section.halaman2 {
-  background: #BCCFD7;
+  background: #5dccff;
   -webkit-transition-delay: 0.05s;
 }
 
@@ -125,7 +125,7 @@ section.halaman2 {
 }
 
 section.halaman3 {
-  background: #D3B0AD;
+  background: #ff52da;
   -webkit-transition-delay: 0.1s;
 }
 
@@ -141,7 +141,7 @@ section.halaman3 {
 }
 
 section.halaman4 {
-  background: #f1ca89;
+  background: #ff69a7;
   -webkit-transition-delay: 0.15s;
 }
 
