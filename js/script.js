@@ -16,5 +16,3 @@ function PindahKeHalaman(page) {
   dalemnya_kontener.classList.remove('buka_menu', 'page-halaman1', 'page-halaman2');
   dalemnya_kontener.classList.add('page-' + pages[page]);
 }
-
-

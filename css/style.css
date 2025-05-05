@@ -138,15 +138,15 @@ section.after {
   top: 0;
   left: 0;
   height: 70px;
-  width: 54px;
+  width: 40px;
   cursor: pointer;
   background: url(../gambar/menu.png) no-repeat center;
-  background-size: 44px;
+  background-size: 30px;
 }
 
 .tombol_menu:active {
   opacity: 0.2;
-}
+} 
 
 .judul_halaman {
   color: white;
@@ -305,4 +305,5 @@ section.after {
 
 
 /*=== new add ===*/
+
 
