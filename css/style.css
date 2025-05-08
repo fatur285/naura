@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/*=== style.css ===*/
 body,
 html {
   -webkit-tap-highlight-color: transparent;
   height: 100%;
-  background: linear-gradient(-45deg, #5482ff, #f164a6, #415dff,rgb(250, 23, 201));
+  background: linear-gradient(-45deg, #415dff, #f164a6, #415dff,#f164a6);
   background-size: 400% 400%;
-  animation: animasiBegron 15s ease infinite;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -36,7 +34,7 @@ html {
 }
 
 .kontener2 .tombol:hover {
-  background: #ffffff42;
+  background: #00000042;
   cursor: pointer;
 }
 
@@ -47,9 +45,9 @@ html {
 
 .dalemnya_kontener {
   text-align: center;
-  background: #2b2b2b;
+  background: #404040;
   width: 100%;
-  height: 95%;
+  height: 94%;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -68,24 +66,9 @@ section .gambar {
   border-radius: 10px;
 }
 
-section .ucapan {
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  color: #3d3d3d;
-}
-
-section .isiucapan {
-  color: #3d3d3d;
-  width: 82%;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-}
-
 section.halaman1 {
-  background: #5ca8ff;
-  -webkit-transition-delay: 0s;
+  background: #ff378a;
+  -webkit-transition-delay: 0.5s;
 }
 
 .halaman1 .ucapan1,
@@ -102,18 +85,18 @@ section.halaman1 {
 }
 
 section.halaman2 {
-  background: #5dccff;
+  background: #ff378a;
   -webkit-transition-delay: 0.05s;
 }
 
 .halaman2 .isiucapan2 {
   display: inline-block;
   width: 80%;
-  color: #404040;
+  color: #f5f5f5;
 }
 
 section.halaman3 {
-  background: #ff52da;
+  background: #ff378a;
   -webkit-transition-delay: 0.1s;
 }
 
@@ -123,30 +106,9 @@ section.halaman3 {
   color: #f5f5f5;
 }
 
-section.halaman4 {
-  background: #ff69a7;
-  -webkit-transition-delay: 0.15s;
-}
-
 section.after {
   -webkit-transform: translateY(100%);
 }
-
-.tombol_menu {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 40px;
-  cursor: pointer;
-  background: url(../gambar/menu.png) no-repeat center;
-  background-size: 30px;
-}
-
-.tombol_menu:active {
-  opacity: 0.2;
-} 
 
 .judul_halaman {
   color: white;
@@ -155,89 +117,25 @@ section.after {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin: 0;
-  line-height: 70px;
+  line-height: 85px;
   -webkit-user-select: none;
 }
 
-.page-halaman1 section.halaman1 {
-  -webkit-transition-delay: 0s;
-}
-.page-halaman1 section.halaman2 {
-  -webkit-transition-delay: 0.15s;
-}
-.page-halaman1 section.halaman3 {
-  -webkit-transition-delay: 0.1s;
-}
-.page-halaman1 section.halaman4 {
-  -webkit-transition-delay: 0.05s;
-}
-.page-halaman2 section.halaman1 {
-  -webkit-transition-delay: 0s;
-}
-.page-halaman2 section.halaman2 {
-  -webkit-transition-delay: 0.05s;
-}
-.page-halaman2 section.halaman3 {
-  -webkit-transition-delay: 0.1s;
-}
-.page-halaman2 section.halaman4 {
-  -webkit-transition-delay: 0.05s;
-}
-
-.buka_menu section {
+.btn-kembali {
+  position: absolute;
+  color: white;
+  top: 1px;
+  left: 18px;
+  background: none;
+  border: none;
+  font-size: 50px;
   cursor: pointer;
-}
-.buka_menu section.halaman1 {
-  -webkit-transform: translateY(70px);
-  -webkit-transition-delay: 0.15s;
-}
-.buka_menu section.halaman2 {
-  -webkit-transform: translateY(140px);
-  -webkit-transition-delay: 0.1s;
-}
-.buka_menu section.halaman3 {
-  -webkit-transform: translateY(210px);
-  -webkit-transition-delay: 0.05s;
-}
-.buka_menu section.halaman4 {
-  -webkit-transform: translateY(280px);
-  -webkit-transition-delay: 0s;
-}
-.buka_menu.page-halaman1 section.halaman1 {
-  -webkit-transition-delay: 0s;
-}
-.buka_menu.page-halaman1 section.halaman2 {
-  -webkit-transition-delay: 0.05s;
-}
-.buka_menu.page-halaman1 section.halaman3 {
-  -webkit-transition-delay: 0.1s;
-}
-.buka_menu.page-halaman1 section.halaman4 {
-  -webkit-transition-delay: 0.15s;
-}
-.buka_menu.page-halaman2 section.halaman1 {
-  -webkit-transition-delay: 0s;
-}
-.buka_menu.page-halaman2 section.halaman2 {
-  -webkit-transition-delay: 0.05s;
-}
-.buka_menu.page-halaman2 section.halaman3 {
-  -webkit-transition-delay: 0.1s;
-}
-.buka_menu.page-halaman2 section.halaman4 {
-  -webkit-transition-delay: 0.15s;
+  transition: background-color 0.3s ease;
+  z-index: 10;
 }
 
-@keyframes animasiBegron {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.btn-kembali:hover {
+  transform: scale(1.1);
 }
 
 /*=== buciner.css ===*/
@@ -247,7 +145,7 @@ section.after {
 
 /*=== efekteks.css ===*/
 .ml1 {
-  margin-top: 10%;
+  margin-top: 30%;
   color: #404040;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
@@ -290,20 +188,191 @@ section.after {
   line-height: 1em;
 }
 
-/*=== responsif.css ===*/
+/*=== new add ===*/
+.kontener3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #d49cb4, #ff94c2);
+  padding-top: 60px;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.judul_ini {
+  position: absolute;
+  top: 14px;
+  color: #404040;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1;
+  -webkit-user-select: none;
+}
+
+.isi-halaman {
+  color: #404040;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+}
+
+#kontener3 #waktu {
+  font-size: 2rem;
+  color: #404040;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.ucapan {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #404040;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}
+
+.isiucapan {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #404040;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 22px;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: #404040;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.toggle-button:hover {
+  transform: scale(1.1);
+}
+
+.dropdown {
+  position: absolute;
+  margin-top: 9px;
+  top: 45px;
+  left: 9px;
+  background: none;
+  border: none;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9;
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 21px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown button:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 300px) and (max-width: 640px) {
   .ml1 {
-    margin-top: 45%;
+    margin-top: 60%;
   }
 
   .kontener2 {
     padding: 10px;
     text-align: center;
-    margin-top: 60%;
+    margin-top: 50%;
+  }
+
+  .kontener3 {
+    padding-top: 40px;
+    gap: 16px;
+  }
+
+  .toggle-button {
+    top: 15px;
+    left: 10px;
+    padding: 8px;
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 18px;
+  }
+
+  .hamburger span {
+    height: 3px;
+  }
+
+  .dropdown {
+    top: 45px;
+    left: 8px;
+    gap: 7px;
+    width: max-content;
+  }
+
+  .btn-kembali {
+    font-size: 45px;
+    top: 1px;
+    left: 15px;
+  }
+
+  .judul_halaman {
+    line-height: 70px;
+    font-size: 1.5rem;
+  }
+
+  .judul_ini {
+    top: 21px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .isi-halaman {
+    font-size: 1rem;
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  #kontener3 #waktu {
+    font-size: 1.5rem;
+  }
+
+  .ucapan {
+    font-size: 1.3rem;
+  }
+
+  .isiucapan {
+    font-size: 1rem;
+    padding: 0 15px;
   }
 }
-
-
-/*=== new add ===*/
-
-
