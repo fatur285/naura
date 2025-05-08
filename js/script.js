@@ -13,15 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let ucapan = "";
   let isiUcapan = "";
 
-  if (jam >= 23 || jam < 11) {
+  if (jam >= 0 && jam < 12) {
     ucapan = "Pagi Princess!";
     isiUcapan = "Percaya deh, orang pertama yang aku cari pas bangun tidur itu kamu sayang. <br/> Love U kesayangan <3";
-  } else if (jam >= 11 && jam <= 14) {
+  } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Princess!";
-    isiUcapan = "Jangan lupa mam siang ya sayang! <br/> Love U Sweetie girl <3";
-  } else if (jam > 14 && jam <= 17) {
+    isiUcapan = "Jangan lupa mam siang ya sayang. <br/> Love U Sweetie girl <3";
+  } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Princess!";
-    isiUcapan = "Udah sore tu mandi cinta! bukan main hp terus. <br/> Love U My Favorite Girl <3";
+    isiUcapan = "Udah sore tu mandi sayang... bukan main hp terus! <br/> Love U My Favorite Girl <3";
   } else {
     ucapan = "Malem Princess!";
     isiUcapan = "Jangan begadang terus ya cinta, nanti kalo kamu sakit aku sedih😮<br/> Love U So Much My Princess <3";
