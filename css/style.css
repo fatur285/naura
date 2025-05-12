@@ -15,7 +15,7 @@ html {
 .kontener2 {
   padding: 20px;
   text-align: center;
-  margin-top: 17%;
+  margin-top: 20%;
 }
 
 .kontener2 h1 {
@@ -67,7 +67,7 @@ section .gambar {
 }
 
 section.halaman1 {
-  background: #ff378a;
+  background: #ff80b5;
   -webkit-transition-delay: 0.5s;
 }
 
@@ -81,29 +81,29 @@ section.halaman1 {
 .halaman1 .isiucapan1 {
   display: inline-block;
   width: 80%;
-  color: #f5f5f5;
+  color: #404040;
 }
 
 section.halaman2 {
-  background: #ff378a;
+  background: #ff80b5;
   -webkit-transition-delay: 0.05s;
 }
 
 .halaman2 .isiucapan2 {
   display: inline-block;
   width: 80%;
-  color: #f5f5f5;
+  color: #404040;
 }
 
 section.halaman3 {
-  background: #ff378a;
+  background: #ff80b5;
   -webkit-transition-delay: 0.1s;
 }
 
 .halaman3 .isiucapan3 {
   display: inline-block;
   width: 80%;
-  color: #f5f5f5;
+  color: #404040;
 }
 
 section.after {
@@ -111,8 +111,8 @@ section.after {
 }
 
 .judul_halaman {
-  color: white;
-  font-weight: 500;
+  color: #404040;
+  font-weight: 600;
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -123,15 +123,15 @@ section.after {
 
 .btn-kembali {
   position: absolute;
-  color: white;
-  top: 1px;
-  left: 18px;
-  background: none;
+  background-color: transparent;
   border: none;
-  font-size: 50px;
+  top: 15px;
+  left: 14px;
+  font-size: 24px;
+  color: #404040;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 10;
+  padding: 10px;
+  transition: color 0.3s ease;
 }
 
 .btn-kembali:hover {
@@ -145,7 +145,7 @@ section.after {
 
 /*=== efekteks.css ===*/
 .ml1 {
-  margin-top: 30%;
+  margin-top: 5%;
   color: #404040;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
@@ -193,23 +193,26 @@ section.after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(to right, #d49cb4, #ff94c2);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #ffb7d9, #ff94c2);
   padding-top: 60px;
   gap: 20px;
   text-align: center;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .judul_ini {
   position: absolute;
-  top: 14px;
+  top: 6px;
   color: #404040;
   font-weight: 600;
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
   margin: 0;
-  line-height: 1;
   -webkit-user-select: none;
 }
 
@@ -247,7 +250,7 @@ section.after {
 .toggle-button {
   position: absolute;
   top: 7px;
-  left: 7px;
+  left: 9px;
   background: none;
   border: none;
   padding: 10px;
@@ -259,8 +262,8 @@ section.after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25px;
-  height: 22px;
+  width: 30px;
+  height: 25px;
 }
 
 .hamburger span {
@@ -278,22 +281,26 @@ section.after {
 
 .dropdown {
   position: absolute;
-  margin-top: 9px;
-  top: 45px;
-  left: 9px;
+  top: 63px;
+  left: 17px;
   background: none;
   border: none;
   display: none;
   flex-direction: column;
+  width: 35px;
   gap: 10px;
   z-index: 9;
 }
 
 .dropdown button {
+  margin-bottom: 14px;
   background: none;
-  border: none;
+  background-color: #40404038;
+  border-radius: 5px;
+  padding: 1px;
+  border-top: 2px dotted #404040;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 19px;
   transition: transform 0.2s ease;
 }
 
@@ -301,15 +308,40 @@ section.after {
   transform: scale(1.1);
 }
 
+.btn {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slidedown 0.3s forwards;
+}
+
+.btn:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slidedown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 300px) and (max-width: 640px) {
   .ml1 {
-    margin-top: 60%;
+    margin-top: 15%;
   }
 
   .kontener2 {
     padding: 10px;
     text-align: center;
-    margin-top: 50%;
+    margin-top: 60%;
   }
 
   .kontener3 {
@@ -318,14 +350,14 @@ section.after {
   }
 
   .toggle-button {
-    top: 15px;
-    left: 10px;
+    top: 8px;
+    left: 6px;
     padding: 8px;
   }
 
   .hamburger {
-    width: 20px;
-    height: 18px;
+    width: 23px;
+    height: 19px;
   }
 
   .hamburger span {
@@ -333,25 +365,31 @@ section.after {
   }
 
   .dropdown {
-    top: 45px;
-    left: 8px;
+    top: 52px;
+    left: 12px;
     gap: 7px;
     width: max-content;
   }
 
+  .dropdown button {
+    width: 27px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
   .btn-kembali {
-    font-size: 45px;
-    top: 1px;
-    left: 15px;
+    font-size: 24px;
+    top: 16px;
+    left: 12px;
   }
 
   .judul_halaman {
-    line-height: 70px;
+    line-height: 80px;
     font-size: 1.5rem;
   }
 
   .judul_ini {
-    top: 21px;
+    top: 8px;
     font-size: 1.5rem;
     text-align: center;
     width: 100%;
@@ -375,4 +413,105 @@ section.after {
     font-size: 1rem;
     padding: 0 15px;
   }
+
+  .galeri {
+    column-count: 1;
+  }
+}
+
+/* galeri */
+.preview-galeri {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.preview-galeri img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.preview-galeri img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.preview-teks {
+  font-family: 'Poppins', sans-serif;
+  color: #404040;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+  animation: fadeInUp 0.8s ease both;
+}
+
+/* animasi masuk dari bawah */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.halaman4 {
+  background: #d6aebf;
+  -webkit-transition-delay: 0.5s;
+}
+
+.galeri {
+  column-count: 3;
+  padding: 15px;
+}
+
+.foto-galeri {
+  width: 100%;
+  transition: all 0.3s ease;
+  break-inside: avoid;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #000;
+}
+
+.foto-galeri:hover {
+  transform: scale(1.03);
+}
+
+video.foto-galeri {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content img,
+.lightbox-content video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }

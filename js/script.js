@@ -142,7 +142,6 @@ anime.timeline({
     delay: 1000
   });
 
-
 var textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -189,4 +188,35 @@ anime.timeline({
       halaman.style.display = 'none';
     });
   }
-  
+
+  const lightbox = document.getElementById('lightbox');
+  const content = lightbox.querySelector('.lightbox-content');
+
+  document.querySelectorAll('.foto-galeri').forEach(item => {
+    item.addEventListener('click', () => {
+
+      content.innerHTML = '';
+
+      if (item.tagName.toLowerCase() === 'img') {
+        const img = document.createElement('img');
+        img.src = item.src;
+        content.appendChild(img);
+      } else if (item.tagName.toLowerCase() === 'video') {
+        const video = document.createElement('video');
+        video.src = item.querySelector('source').src;
+        video.controls = true;
+        video.autoplay = true;
+        video.style.borderRadius = '8px';
+        content.appendChild(video);
+      }
+
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      content.innerHTML = '';
+    }
+  });

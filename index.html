@@ -9,11 +9,12 @@
   <meta name="description" content="Sayang naura banget">
   <meta name="author" content="fatur285">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
   <div class="kontener2" id="kontener2">
-    <h1>Haloo Princess🎀</h1>
+    <h1>Halo Princess</h1>
     <button class="tombol" id="tombol">Sini</button>
   </div>
 
@@ -26,13 +27,21 @@
       </div>
     </button>
     <div class="dropdown" id="dropdownMenu" style="display: none;">
-      <button onclick="PindahKeHalaman(0)">💓</button>
-      <button onclick="PindahKeHalaman(1)">🎀</button>
-      <button onclick="PindahKeHalaman(2)">💕</button>
+      <button onclick="PindahKeHalaman(0)" class="btn">💓</button>
+      <button onclick="PindahKeHalaman(1)" class="btn">🎀</button>
+      <button onclick="PindahKeHalaman(2)" class="btn">💕</button>
     </div>
 
     <h1 class="judul_ini">Naura Azura Velsya</h1>
-  
+    
+    <div class="preview-galeri" onclick="PindahKeHalaman(3)">
+     <img src="galeri/gambar1.jpg" alt="Preview">
+     <img src="galeri/gambar2.jpg" alt="Preview">
+     <img src="galeri/gambar3.jpg" alt="Preview">
+    </div>
+
+    <p class="preview-teks">Lihat kenangan</p>
+
     <div class="isi-halaman">
       <h1 id="waktu"></h1>
       <h1 class="ucapan" id="ucapan"></h1>
@@ -43,41 +52,70 @@
   <div class="kontener" id="kontener">
     <div class="dalemnya_kontener">
       <section class="halaman1 dalemnya_halaman">
-        <button class="btn-kembali" onclick="kembaliKeMenu()">⬅</button>
-        <h1 class="judul_halaman">My</h1>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">
+          <i class="fas fa-arrow-left"></i></button>
+        <h1 class="judul_halaman">Sweet</h1>
         <br>
-        <img src="gambar/gambar1.jpg" alt="Web Bucin Html, Css, Js" style="width: 200px; height: 200px;" class="gambar">
+        <img src="gambar/gambar1.jpg" alt="Princess" style="width: 200px; height: 200px;" class="gambar">
         <br>
         <div class="ucapan1">
-          <p class="isiucapan1">Makasih ya udah buat aku kecintaan banget sama kamu, gatau lagi gimana cara aku bilang kalo aku tu sayang banget sama kamu😢💓
+          <p class="isiucapan1">Makasih ya udah sayang sama aku, udah gatau lagi gimana cara aku bilang kalo aku tu sayang banget sama kamu😢💓
           </p>
         </div>
       </section>
       <section class="halaman2 dalemnya_halaman">
-        <button class="btn-kembali" onclick="kembaliKeMenu()">⬅</button>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">
+          <i class="fas fa-arrow-left"></i></button>
         <h1 class="judul_halaman">Favorite</h1>
         <br>
-        <img src="gambar/gambar2.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <img src="gambar/gambar2.jpg" alt="Naura" class="gambar">
         <br>
         <div class="ucapan2">
-          <p class="isiucapan2">Apapun nanti yang terjadi, aku harap kamu selalu jadi orang favorite aku ya... perasaan aku gabisa boong kalo soal kamu💓
+          <p class="isiucapan2">Apapun nanti yang terjadi, aku harap kamu selalu jadi orang favorite aku. perasaan aku gabisa boong kalo soal naura💓
           </p>
         </div>
       </section>
       <section class="halaman3 dalemnya_halaman">
-        <button class="btn-kembali" onclick="kembaliKeMenu()">⬅</button>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">
+          <i class="fas fa-arrow-left"></i></button>
         <h1 class="judul_halaman">Princess</h1>
         <br>
-        <img src="gambar/gambar3.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <img src="gambar/gambar3.jpg" alt="Kesayangan" class="gambar">
         <br>
         <div class="ucapan3">
-          <p class="isiucapan3">Bahagia terus yaa kesayangan... Jadi princess gaboleh sedih - sedih, nanti princenya marah loh. <br/> Sayang princess terus💕</p>
+          <p class="isiucapan3">Bahagia terus yaa kesayangan... <br/> Jadi princess gaboleh sedih, nanti princenya marah! <br/> Sayang princess terus💕</p>
         </div>
       </section>
+      <section class="halaman4 dalemnya_halaman">
+       <button class="btn-kembali" onclick="kembaliKeMenu()">
+        <i class="fas fa-arrow-left"></i>
+         </button>
+      <h1 class="judul_halaman">Kesayangan</h1>
+     <div class="galeri">
+       <img src="galeri/gambar1.jpg" alt="Fana" class="foto-galeri">
+       <img src="galeri/gambar2.jpg" alt="Fana" class="foto-galeri">
+       <img src="galeri/gambar3.jpg" alt="Fana" class="foto-galeri">
+    <!-- Menambahkan Video -->
+       <video class="foto-galeri" muted>
+       <source src="galeri/video1.mp4" type="video/mp4">
+        </video>
+       <video class="foto-galeri" muted>
+       <source src="galeri/video2.mp4" type="video/mp4">
+      </video>
+      <video class="foto-galeri" muted>
+      <source src="galeri/video3.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+  </div>
+</div>
+</section>
+
+
     </div>
   </div>
-
-  <script>lucide.createIcons();</script>  
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
     integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
