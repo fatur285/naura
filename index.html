@@ -6,13 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>I Love U</title>
-  <meta name="description" content="Sayang naura banget">
+  <meta name="description" content="Sayang naura">
   <meta name="author" content="fatur285">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
+  <div id="formBalasanModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="tutupFormBalasan()">&times;</span>
+    <h2>Feedback</h2>
+    <form action="https://formspree.io/f/manoolkv" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <textarea name="pesan" placeholder="Message..." rows="4" required></textarea>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
   <div class="kontener2" id="kontener2">
     <h1>Halo Princess</h1>
     <button class="tombol" id="tombol">Sini</button>
@@ -34,6 +47,8 @@
 
     <h1 class="judul_ini">Naura Azura Velsya</h1>
     
+<button class="tombol-modal" onclick="tampilkanFormBalasan()"><i class="fas fa-envelope"></i></button>
+
     <div class="preview-galeri" onclick="PindahKeHalaman(3)">
      <img src="galeri/gambar1.jpg" alt="Preview">
      <img src="galeri/gambar2.jpg" alt="Preview">

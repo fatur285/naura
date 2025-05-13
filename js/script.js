@@ -215,7 +215,7 @@ anime.timeline({
      }
 
      if (isVideo && !audio.paused) {
-      audio.volume = 0.2;
+      audio.volume = 0.1;
     }
 
     lightbox.setAttribute('data-jenis', isVideo ? 'video' : 'gambar');
@@ -236,3 +236,10 @@ anime.timeline({
     lightbox.removeAttribute('data-jenis');
   }
  });
+
+ function tampilkanFormBalasan() {
+  document.getElementById('formBalasanModal').style.display = 'flex';
+}
+function tutupFormBalasan() {
+  document.getElementById('formBalasanModal').style.display = 'none';
+}
