@@ -1,3 +1,5 @@
+const audio = new Audio('audio/audio.mp3');
+
 document.addEventListener("DOMContentLoaded", () => {
   const semuaHalaman = document.querySelectorAll('#kontener .dalemnya_halaman');
   semuaHalaman.forEach((halaman, index) => {
@@ -35,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 $(document).ready(function () {
-  const audio = new Audio('audio/audio.mp3');
   const popupSound = new Audio('audio/popup.mp3');
 
   $("#tombol").click(function () {
@@ -197,6 +198,8 @@ anime.timeline({
 
       content.innerHTML = '';
 
+      let isVideo = false;
+
       if (item.tagName.toLowerCase() === 'img') {
         const img = document.createElement('img');
         img.src = item.src;
@@ -208,15 +211,28 @@ anime.timeline({
         video.autoplay = true;
         video.style.borderRadius = '8px';
         content.appendChild(video);
-      }
+        isVideo = true;
+     }
 
-      lightbox.style.display = 'flex';
-    });
+     if (isVideo && !audio.paused) {
+      audio.volume = 0.2;
+    }
+
+    lightbox.setAttribute('data-jenis', isVideo ? 'video' : 'gambar');
+    lightbox.style.display = 'flex';
   });
+});
 
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) {
       lightbox.style.display = 'none';
       content.innerHTML = '';
+
+    const jenis = lightbox.getAttribute('data-jenis');
+    if (jenis === 'video' && !audio.paused) {
+      audio.volume = 1;
     }
-  });
+
+    lightbox.removeAttribute('data-jenis');
+  }
+ });
