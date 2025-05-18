@@ -55,8 +55,8 @@ $(document).ready(function () {
       };
 
       Swal.fire({
-        title: 'Haloo Princess!',
-        text: 'Percaya deh sayang, naura itu alasan fatur buat bahagia tiap hari~',
+        title: 'Halo sayang!',
+        text: 'Percaya deh, naura itu alasan fatur buat bahagia tiap hari~',
         confirmButtonText: 'Close',
         allowOutsideClick: false
       });
