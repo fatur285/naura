@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (jam >= 0 && jam < 12) {
     ucapan = "Pagi Princess!";
-    isiUcapan = "Percaya deh, orang pertama yang aku cari pas bangun tidur itu kamu sayang. <br/> Love U kesayangan <3";
+    isiUcapan = "Percaya deh, orang pertama yang aku cari waktu bangun tidur itu kamu sayang. <br/> Love U kesayangan <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Princess!";
     isiUcapan = "Jangan lupa mam siang ya sayang. <br/> Love U Sweetie girl <3";
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isiUcapan = "Udah sore tu mandi sayang... bukan main hp terus! <br/> Love U My Favorite Girl <3";
   } else {
     ucapan = "Malem Princess!";
-    isiUcapan = "Jangan begadang terus ya cinta, nanti kalo kamu sakit aku sedih😮<br/> Love U So Much My Princess <3";
+    isiUcapan = "Jangan begadang terus ya cinta, nanti kalo kamu sakit aku sedih 😮 <br/> Love U So Much My Princess <3";
   }
 
   ucapanElement.innerHTML = ucapan;
