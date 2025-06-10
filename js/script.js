@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let isiUcapan = "";
 
   if (jam >= 0 && jam < 12) {
-    ucapan = "Pagi Princess!";
-    isiUcapan = "Percaya deh, orang pertama yang aku cari waktu bangun tidur itu kamu sayang. <br/> Love U kesayangan <3";
+    ucapan = "Pagi Naura!";
+    isiUcapan = "Awali pagi kamu dengan hal - hal yg positif ya... jangan terlalu mikirin cinta, karena pada dasarnya cinta datang pada wanita yg hebat. <br/> be happy <3";
   } else if (jam >= 12 && jam <= 15) {
-    ucapan = "Siang Princess!";
-    isiUcapan = "Jangan lupa mam siang ya sayang. <br/> Love U Sweetie girl <3";
+    ucapan = "Siang Naura!";
+    isiUcapan = "Makan siangnya jangan lupa! katanya pengen gemuk. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
-    ucapan = "Sore Princess!";
-    isiUcapan = "Udah sore tu mandi sayang... bukan main hp terus! <br/> Love U My Favorite Girl <3";
+    ucapan = "Sore Naura!";
+    isiUcapan = "Jangan males mandi sore! <br/> Bahagia terus kamu <3";
   } else {
-    ucapan = "Malem Princess!";
-    isiUcapan = "Jangan begadang terus ya cinta, nanti kalo kamu sakit aku sedih 😮 <br/> Love U So Much My Princess <3";
+    ucapan = "Malem Naura!";
+    isiUcapan = "Kurangin begadangnya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
   }
 
   ucapanElement.innerHTML = ucapan;
@@ -55,8 +55,8 @@ $(document).ready(function () {
       };
 
       Swal.fire({
-        title: 'Halo sayang!',
-        text: 'Percaya deh, naura itu alasan fatur buat bahagia tiap hari~',
+        title: 'Halo!',
+        text: 'Bahagia terus ya... selalu ada org lain yg nunggu kabar bahagia dari kamu! ~',
         confirmButtonText: 'Close',
         allowOutsideClick: false
       });
