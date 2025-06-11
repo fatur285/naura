@@ -241,7 +241,6 @@ section.after {
   font-weight: bold;
   font-size: 1.2rem;
   color: #141414;
-  background: #e2e2e26e;
   font-family: 'Poppins', sans-serif;
   margin: 10px 0;
 }
@@ -250,7 +249,6 @@ section.after {
   font-weight: 500;
   font-size: 1.2rem;
   color: #141414;
-  background: #e2e2e26e;
   font-family: 'Poppins', sans-serif;
   padding: 0 20px;
   line-height: 1.5;
