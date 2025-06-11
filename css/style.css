@@ -4,7 +4,7 @@ body,
 html {
   -webkit-tap-highlight-color: transparent;
   height: 100%;
-  background: linear-gradient(-45deg, #afafaf,#ff93c6);
+  background: linear-gradient(-45deg, #ff0b99,#ff93c6, #ff0b99, #ff93c6);
   background-size: 400% 400%;
   width: 100%;
   padding: 0;
@@ -45,7 +45,7 @@ html {
 
 .dalemnya_kontener {
   text-align: center;
-  background: #404040;
+  background: transparent;
   width: 100%;
   height: 94%;
   overflow: hidden;
@@ -67,7 +67,7 @@ section .gambar {
 }
 
 section.halaman1 {
-  background: #ff80b5;
+  background: #e2e2e2bd;
   -webkit-transition-delay: 0.5s;
 }
 
@@ -81,29 +81,29 @@ section.halaman1 {
 .halaman1 .isiucapan1 {
   display: inline-block;
   width: 80%;
-  color: #404040;
+  color: #141414;
 }
 
 section.halaman2 {
-  background: #ff80b5;
+  background: #e2e2e2bd;
   -webkit-transition-delay: 0.05s;
 }
 
 .halaman2 .isiucapan2 {
   display: inline-block;
   width: 80%;
-  color: #404040;
+  color: #141414;
 }
 
 section.halaman3 {
-  background: #ff80b5;
-  -webkit-transition-delay: 0.1s;
+  background: #e2e2e2bd;
+  -webkit-transition-delay: 0.5s;
 }
 
 .halaman3 .isiucapan3 {
   display: inline-block;
   width: 80%;
-  color: #404040;
+  color: #141414;
 }
 
 section.after {
@@ -111,7 +111,7 @@ section.after {
 }
 
 .judul_halaman {
-  color: #404040;
+  color: #141414;
   font-weight: 600;
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
@@ -128,7 +128,7 @@ section.after {
   top: 15px;
   left: 14px;
   font-size: 24px;
-  color: #404040;
+  color: #141414;
   cursor: pointer;
   padding: 10px;
   transition: color 0.3s ease;
@@ -144,7 +144,7 @@ section.after {
 
 .ml1 {
   margin-top: 5%;
-  color: #404040;
+  color: #141414;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1.2em;
@@ -166,7 +166,7 @@ section.after {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #404040;
+  background-color: #141414;
   transform-origin: 0 0;
 }
 .ml1 .line1 {
@@ -176,7 +176,7 @@ section.after {
   bottom: 0;
 }
 .ml2 {
-  color: #404040;
+  color: #141414;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1em;
@@ -191,9 +191,8 @@ section.after {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background: linear-gradient(to right, #ffb7d9, #ff94c2);
+  overflow: hidden;
+  background: none;
   padding-top: 60px;
   gap: 20px;
   text-align: center;
@@ -201,10 +200,20 @@ section.after {
   scroll-behavior: smooth;
 }
 
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .judul_ini {
   position: absolute;
   top: 6px;
-  color: #404040;
+  color: #141414;
   font-weight: 600;
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
@@ -214,15 +223,16 @@ section.after {
 }
 
 .isi-halaman {
-  color: #404040;
+  color: #141414;
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   max-width: 700px;
+  z-index: 1;
 }
 
 #kontener3 #waktu {
   font-size: 2rem;
-  color: #404040;
+  color: #141414;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
 }
@@ -230,15 +240,17 @@ section.after {
 .ucapan {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #404040;
+  color: #141414;
+  background: #e2e2e26e;
   font-family: 'Poppins', sans-serif;
   margin: 10px 0;
 }
 
 .isiucapan {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
-  color: #404040;
+  color: #141414;
+  background: #e2e2e26e;
   font-family: 'Poppins', sans-serif;
   padding: 0 20px;
   line-height: 1.5;
@@ -266,7 +278,7 @@ section.after {
 .hamburger span {
   display: block;
   height: 4px;
-  background-color: #404040;
+  background-color: #141414;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -295,7 +307,7 @@ section.after {
   background-color: #40404038;
   border-radius: 5px;
   padding: 1px;
-  border-top: 2px dotted #404040;
+  border-top: 2px dotted #141414;
   cursor: pointer;
   font-size: 19px;
   transition: transform 0.2s ease;
@@ -404,12 +416,36 @@ section.after {
 
   .ucapan {
     font-size: 1.3rem;
+    animation: fadeInUp 0.8s ease both;
   }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   .isiucapan {
     font-size: 1rem;
     padding: 0 15px;
+    animation: fadeInUp 0.8s ease both;
   }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   .galeri {
     column-count: 1;
@@ -422,6 +458,7 @@ section.after {
   gap: 8px;
   margin-top: 30px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .preview-galeri img {
@@ -439,7 +476,7 @@ section.after {
 
 .preview-teks {
   font-family: 'Poppins', sans-serif;
-  color: #404040;
+  color: #141414;
   margin-top: 5px;
   font-size: 1rem;
   text-align: center;
@@ -458,7 +495,7 @@ section.after {
 }
 
 section.halaman4 {
-  background: #d6aebf;
+  background: #e2e2e2bd;
   z-index: 2;
   -webkit-transition-delay: 0.5s;
 }
@@ -533,7 +570,7 @@ video.foto-galeri {
   padding: 5px;
   cursor: pointer;
   z-index: 11;
-  color: #404040;
+  color: #141414;
   font-size: 25px;
   transition: 0.3s ease;
 }
@@ -544,7 +581,7 @@ video.foto-galeri {
   transform: scale(1.1);
 }
 .modal-content {
-  background: rgb(255, 155, 205);
+  background: #e2e2e2bd;
   padding: 7px;
   border-radius: 12px;
   max-width: 400px;
@@ -553,7 +590,7 @@ video.foto-galeri {
   position: relative;
 }
 .modal h2 {
-  color: #404040;
+  color: #141414;
   font-family: 'Poppins', sans-serif;
   font-weight: 450;
   font-size: 1.2em;
@@ -566,3 +603,43 @@ video.foto-galeri {
   cursor: pointer;
 }
 
+.kontener3.siang {
+  color: #141414;
+}
+
+.kontener3.siang .judul_ini,
+.kontener3.siang .ucapan,
+.kontener3.siang .isiucapan,
+.kontener3.siang .preview-teks {
+  color: #141414;
+}
+
+.kontener3.siang .tombol-modal {
+  color: #141414;
+}
+
+
+.kontener3.malam .judul_ini,
+.kontener3.malam .ml1,
+.kontener3.malam .ml2,
+.kontener3.malam .ucapan,
+.kontener3.malam .isiucapan,
+.kontener3.malam .preview-teks {
+  color: #ffffff;
+  background: none;
+}
+
+.kontener3.malam .tombol-modal {
+  color: #ffffff;
+}
+
+.kontener3.malam .hamburger span,
+.kontener3.malam .ml1 .line1,
+.kontener3.malam .ml1 .line2 {
+  background-color: #ffffff;
+}
+
+.kontener3.malam .dropdown button {
+  background-color: #40404038 !important;
+  border-color: #ffffff;
+}

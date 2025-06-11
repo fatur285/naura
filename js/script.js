@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (jam >= 0 && jam < 12) {
     ucapan = "Pagi Naura!";
-    isiUcapan = "Awali pagi kamu dengan hal - hal yg positif ya... jangan terlalu mikirin cinta, karena pada dasarnya cinta datang pada wanita yg hebat. <br/> be happy <3";
+    isiUcapan = "Awali pagi kamu dengan hal - hal yg positif ya... jangan terlalu mikirin cinta, karena cinta yg tepat datang diwaktu yg tepat. <br/> be happy <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan = "Makan siangnya jangan lupa! katanya pengen gemuk. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
-    isiUcapan = "Jangan males mandi sore! <br/> Bahagia terus kamu <3";
+    isiUcapan = "Jangan lupa mandi! <br/> Bahagia terus kamu <3";
   } else {
     ucapan = "Malem Naura!";
-    isiUcapan = "Kurangin begadangnya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
+    isiUcapan = "Jangan sering begadang ya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
   }
 
   ucapanElement.innerHTML = ucapan;
@@ -43,6 +43,7 @@ $(document).ready(function () {
     $("#kontener2").fadeOut();
     $("#kontener3").fadeIn("4000");
 
+    audio.loop = true;
     audio.volume = 1;
     audio.play();
 
@@ -55,8 +56,8 @@ $(document).ready(function () {
       };
 
       Swal.fire({
-        title: 'Halo!',
-        text: 'Bahagia terus ya... selalu ada org lain yg nunggu kabar bahagia dari kamu! ~',
+        title: '🎈',
+        text: 'Web ini bakal terus aktif sampai aku udah bener - bener mati rasa sama kamu atau mungkin aku udah gaada. Fatur ~',
         confirmButtonText: 'Close',
         allowOutsideClick: false
       });
