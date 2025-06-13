@@ -3,39 +3,55 @@
 body,
 html {
   -webkit-tap-highlight-color: transparent;
-  height: 100%;
-  background: linear-gradient(-45deg, #ff0b99,#ff93c6, #ff0b99, #ff93c6);
-  background-size: 400% 400%;
+  background-color: #ffe6f2;
+  background-image: 
+    url('../gambar/bgk2.jpg'),
+    linear-gradient(to bottom right, #ffe6f2, #ffcce0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   overflow-y: hidden;
 }
 
 .kontener2 {
-  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 20%;
+  padding: 20px;
 }
 
 .kontener2 h1 {
-  color: #ffffff;
+  color: #ff0080;
+  background: #ffffffc4;
+  border: 1px solid #ff0080;
+  display: block;
+  width: 200vh;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .kontener2 .tombol {
   padding: 10px 30px;
-  background: transparent;
-  color: #ffffff;
-  outline: none;
-  border: 2px solid #ffffff;
+  background: #fff;
+  color: #ff0080;
+  border: 2px solid #ff0080;
   border-radius: 10px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
 }
 
 .kontener2 .tombol:hover {
-  background: #00000042;
-  cursor: pointer;
+  background: rgba(255, 0, 128, 0.8);
+  color: #fff;
+  border-color: #fff;
 }
 
 .kontener {
@@ -61,7 +77,6 @@ html {
   width: 100%;
   height: 100%;
   transition: transform 0.5s;
-  -webkit-transition: -webkit-transform 0.5s;
 }
 
 section .gambar {
@@ -69,8 +84,7 @@ section .gambar {
 }
 
 section.halaman1 {
-  background: #e2e2e2bd;
-  -webkit-transition-delay: 0.5s;
+  background: #bebebebd;
 }
 
 .halaman1 .ucapan1,
@@ -87,8 +101,7 @@ section.halaman1 {
 }
 
 section.halaman2 {
-  background: #e2e2e2bd;
-  -webkit-transition-delay: 0.05s;
+  background: #bebebebd;
 }
 
 .halaman2 .isiucapan2 {
@@ -98,8 +111,7 @@ section.halaman2 {
 }
 
 section.halaman3 {
-  background: #e2e2e2bd;
-  -webkit-transition-delay: 0.5s;
+  background: #bebebebd;
 }
 
 .halaman3 .isiucapan3 {
@@ -120,7 +132,6 @@ section.after {
   text-align: center;
   margin: 0;
   line-height: 85px;
-  -webkit-user-select: none;
 }
 
 .btn-kembali {
@@ -133,7 +144,7 @@ section.after {
   color: #141414;
   cursor: pointer;
   padding: 10px;
-  transition: color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn-kembali:hover {
@@ -299,7 +310,7 @@ section.after {
   border-top: 2px dotted #141414;
   cursor: pointer;
   font-size: 19px;
-  transition: transform 0.2s ease;
+  transition: 0.3s;
 }
 
 .dropdown button:hover {
@@ -449,7 +460,7 @@ video.foto-galeri {
   transform: scale(1.1);
 }
 .modal-content {
-  background: #e2e2e2bd;
+  background: #bebebedc;
   padding: 7px;
   border-radius: 12px;
   max-width: 400px;
