@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I"ll Miss U</title>
+  <title>I'll Miss U</title>
   <meta name="author" content="fatur285">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hbd.css">
@@ -16,23 +15,23 @@
 
 <body>
   <div id="formBalasanModal" class="modal"> 
-  <div class="modal-content">
-    <span class="close" onclick="tutupFormBalasan()">&times;</span>
-    <h2>Feedback</h2>
-    <form action="https://formspree.io/f/manoolkv" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <textarea name="pesan" placeholder="Message..." rows="4" required></textarea>
-      <br>
-      <button type="submit">Send</button>
-    </form>
-  </div>
+    <div class="modal-content">
+      <span class="close" onclick="tutupFormBalasan()">&times;</span>
+      <h2>Feedback</h2>
+      <form action="https://formspree.io/f/manoolkv" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea name="pesan" placeholder="Message..." rows="4" required></textarea>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </div>
 
   <div class="kontener2" id="kontener2">
     <h1>Halo Naura!</h1>
     <button class="tombol" id="tombol">Sini</button>
   </div>
-  
+
   <div class="kontener3" id="kontener3" style="display: none;">
     <video id="video1" autoplay muted loop class="backgroundVideo">
       <source id="videoSource" src="" type="video/mp4">
@@ -40,24 +39,26 @@
 
     <button class="toggle-button" onclick="toggleDropdown()">
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </button>
+
     <div class="dropdown" id="dropdownMenu" style="display: none;">
       <button onclick="PindahKeHalaman(0)" class="btn">💓</button>
       <button onclick="PindahKeHalaman(1)" class="btn">🎀</button>
       <button onclick="PindahKeHalaman(2)" class="btn">💕</button>
     </div>
+
     <h1 class="judul_ini">Naura Azura Velsya</h1>
     <button class="tombol-modal" onclick="tampilkanFormBalasan()"><i class="fas fa-envelope"></i></button>
+
     <div class="preview-galeri" onclick="PindahKeHalaman(3)">
-     <img src="galeri/gambar1.jpg" alt="Preview">
-     <img src="galeri/gambar2.jpg" alt="Preview">
-     <img src="galeri/gambar3.jpg" alt="Preview">
+      <img src="galeri/gambar1.jpg" alt="Preview">
+      <img src="galeri/gambar2.jpg" alt="Preview">
+      <img src="galeri/gambar3.jpg" alt="Preview">
     </div>
     <p class="preview-teks">Lihat galeri</p>
+
     <div id="waktu">
       <h1 class="ml1">
         <span class="text-wrapper">
@@ -67,7 +68,8 @@
         </span>
       </h1>
       <p class="ml2" id="jamwkwk"></p>
-    </div>    
+    </div>
+
     <div class="isi-halaman">
       <h1 id="waktu"></h1>
       <h1 class="ucapan" id="ucapan"></h1>
@@ -84,81 +86,74 @@
       <section class="halaman1 dalemnya_halaman">
         <button class="btn-kembali" onclick="kembaliKeMenu()"><i class="fas fa-arrow-left"></i></button>
         <h1 class="judul_halaman">The</h1>
-        <br>
-        <img src="gambar/gambar1.jpg" alt="Pelacur" style="width: 200px; height: 200px;" class="gambar">
-        <br>
+        <img src="gambar/gambar1.jpg" alt="Gambar 1" class="gambar" style="width: 200px; height: 200px;">
         <div class="ucapan1">
-          <p class="isiucapan1">Makasih ya udah pura - pura sayang sama aku, <br/> Se-engganya aku pernah merasa dicintai sama orang yg aku perjuangin bertahun - tahun, walaupun cintanya  ga beneran 😢💓</p>
+          <p class="isiucapan1">
+            Makasih ya udah pura - pura sayang sama aku,<br>
+            Se-enggaknya aku pernah merasa dicintai sama orang yg aku perjuangin bertahun - tahun, walaupun cintanya ga beneran 😢💓
+          </p>
         </div>
       </section>
+
       <section class="halaman2 dalemnya_halaman">
         <button class="btn-kembali" onclick="kembaliKeMenu()"><i class="fas fa-arrow-left"></i></button>
         <h1 class="judul_halaman">Sweetie</h1>
-        <br>
-        <img src="gambar/gambar2.jpg" alt="Pelacur" style="width: 200px; height: 320px;" class="gambar">
-        <br>
+        <img src="gambar/gambar2.jpg" alt="Gambar 2" class="gambar" style="width: 200px; height: 320px;">
         <div class="ucapan2">
-          <p class="isiucapan2">Apapun nanti yang terjadi, aku harap kamu baik - baik aja ya disana, hilangin sifat pembohong & main belakangnya💓</p>
+          <p class="isiucapan2">
+            Apapun nanti yang terjadi, aku harap kamu baik - baik aja ya disana, hilangin sifat pembohong & main belakangnya💓
+          </p>
         </div>
       </section>
+
       <section class="halaman3 dalemnya_halaman">
-        <button class="btn-kembali" onclick="kembaliKeMenu()">
-          <i class="fas fa-arrow-left"></i></button>
+        <button class="btn-kembali" onclick="kembaliKeMenu()"><i class="fas fa-arrow-left"></i></button>
         <h1 class="judul_halaman">Girl</h1>
-        <br>
-        <img src="gambar/gambar3.jpg" alt="Pelacur" style="width: 200px; height: 320px;" class="gambar">
-        <br>
+        <img src="gambar/gambar3.jpg" alt="Gambar 3" class="gambar" style="width: 200px; height: 320px;">
         <div class="ucapan3">
-          <p class="isiucapan3">Bahagia terus ya kamu... <br/> Karena pada dasarnya kebahagian menyertai wanita hebat yg ngga selingkuhin pasangannya</p>
+          <p class="isiucapan3">
+            Bahagia terus ya kamu...<br>
+            Karena pada dasarnya kebahagiaan menyertai wanita hebat yg nggak selingkuhin pasangannya
+          </p>
         </div>
       </section>
+
       <section class="halaman4 dalemnya_halaman">
-       <button class="btn-kembali" onclick="kembaliKeMenu()"><i class="fas fa-arrow-left"></i></button>
-       <h1 class="judul_halaman">Galeri</h1>
-      <div class="galeri">
-        <img src="galeri/gambar1.jpg" alt="Fana" class="foto-galeri">
-        <img src="galeri/gambar2.jpg" alt="Fana" class="foto-galeri">
-        <img src="galeri/gambar3.jpg" alt="Fana" class="foto-galeri">
-        <video class="foto-galeri" muted>
-          <source src="galeri/video1.mp4" type="video/mp4">
-        </video>
-        <video class="foto-galeri" muted>
-          <source src="galeri/video2.mp4" type="video/mp4">
-        </video>
-        <video class="foto-galeri" muted>
-          <source src="galeri/video3.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="lightbox" id="lightbox">
-        <div class="lightbox-content"></div>
-      </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()"><i class="fas fa-arrow-left"></i></button>
+        <h1 class="judul_halaman">Galeri</h1>
+        <div class="galeri">
+          <img src="galeri/gambar1.jpg" alt="Galeri 1" class="foto-galeri">
+          <img src="galeri/gambar2.jpg" alt="Galeri 2" class="foto-galeri">
+          <img src="galeri/gambar3.jpg" alt="Galeri 3" class="foto-galeri">
+          <video class="foto-galeri" muted><source src="galeri/video1.mp4" type="video/mp4"></video>
+          <video class="foto-galeri" muted><source src="galeri/video2.mp4" type="video/mp4"></video>
+          <video class="foto-galeri" muted><source src="galeri/video3.mp4" type="video/mp4"></video>
+        </div>
+        <div class="lightbox" id="lightbox">
+          <div class="lightbox-content"></div>
+        </div>
       </section>
     </div>
   </div>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
-    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  </script>
-  <!-- <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>lucide.createIcons();</script>
   <script src="js/script.js"></script>
-  <script>
 
+  <script>
     const jam = new Date().getHours();
     const videoSiang = "video/day.mp4";
     const videoMalam = "video/night.mp4";
-
     const videoSrc = (jam >= 6 && jam < 18) ? videoSiang : videoMalam;
 
     const video1 = document.getElementById("video1");
     const video2 = document.getElementById("video2");
 
     [video1, video2].forEach(video => {
-    const source = document.createElement("source");
+      const source = document.createElement("source");
       source.src = videoSrc;
       source.type = "video/mp4";
       video.appendChild(source);
@@ -166,58 +161,60 @@
     });
 
     video1.addEventListener("play", () => {
-    video2.currentTime = video1.currentTime;
-    video2.play();
+      video2.currentTime = video1.currentTime;
+      video2.play();
     });
 
     video1.addEventListener("timeupdate", () => {
-    const selisih = Math.abs(video1.currentTime - video2.currentTime);
-    if (selisih > 0.03) {
-      video2.currentTime = video1.currentTime;
-    }
+      const selisih = Math.abs(video1.currentTime - video2.currentTime);
+      if (selisih > 0.03) {
+        video2.currentTime = video1.currentTime;
+      }
     });
   </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-    const jam = new Date().getHours();
-    const kontener3 = document.getElementById("kontener3");
-
-    if (jam >= 6 && jam < 18) {
-      kontener3.classList.add("siang");
-    } else {
-      kontener3.classList.add("malam");
-    }
+      const jam = new Date().getHours();
+      const kontener3 = document.getElementById("kontener3");
+      kontener3.classList.add(jam >= 6 && jam < 18 ? "siang" : "malam");
     });
   </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const today = new Date();
       const tanggal = today.getDate();
       const bulan = today.getMonth();
-  
-      if (tanggal === 6 && bulan === 3) {
-      const kontener2 = document.getElementById("kontener2");
-      const kontener3 = document.getElementById("kontener3");
-      const ucapan = document.getElementById("ucapan");
-      const isiUcapan = document.getElementById("isiucapan");
-      const judul = document.querySelector(".judul_ini");
-  
-      document.body.classList.add("ultah-theme");
 
-      if (ucapan) {
-        ucapan.textContent = "Happy Birthday Naura!";
+      if (tanggal === 6 && bulan === 3) {
+        document.body.classList.add("ultah-theme");
+
+        const kontener2 = document.getElementById("kontener2");
+        const kontener3 = document.getElementById("kontener3");
+        const ucapan = document.getElementById("ucapan");
+        const isiUcapan = document.getElementById("isiucapan");
+        const judul = document.querySelector(".judul_ini");
+
+        if (ucapan) {
+          ucapan.textContent = "Happy Birthday Naura!";
+        }
+
+        if (isiUcapan) {
+          isiUcapan.innerHTML = `
+            Wish u all the best<br>
+            Percaya deh, lewat web ini aku jadi orang pertama yg ngucapin HBD buat kamu.<br><br>
+            Ngga banyak kata yang bisa aku sampaikan, cuman berharap di umur kamu yg sekarang ini,
+            kamu bisa berubah jadi yg lebih baik lagi.<br>
+            #GaBakalLupaKamuPernahNyakitinAku
+          `;
+        }
+
+        if (judul) {
+          judul.textContent = "Special Day";
+        }
       }
-  
-      if (isiUcapan) {
-        isiUcapan.innerHTML = "Wish u all the best <br> Percaya deh, lewat web ini aku jadi orang pertama yg ngucapin HBD buat kamu. <br><br> Ngga banyak kata bisa aku sampaikan, cuman berharap diumur kamu yg sekarang ini, kamu bisa berubah jadi yg lebih baik lagi. <br>#GaBakalLupaKamuPernahNyakitinAku";
-      }
-  
-      if (judul) {
-        judul.textContent = "Special Day";
-      }
-    }
     });
   </script>
 </body>
-
 </html>
