@@ -1,6 +1,5 @@
 const today = new Date();
 const isUltah = today.getDate() === 6 && today.getMonth() === 3;
-
 const audio = new Audio(isUltah ? 'audio/hbd.mp3' : 'audio/audio.mp3');
 
 audio.preload = 'auto';
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isiUcapan = "Makan siangnya jangan lupa! katanya pengen gemuk. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
-    isiUcapan = "Jangan lupa mandi! <br/> Bahagia terus kamu <3";
+    isiUcapan = "Jangan lupa mandi ya! <br/> Bahagia terus kamu <3";
   } else {
     ucapan = "Malem Naura!";
     isiUcapan = "Jangan sering begadang ya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
@@ -57,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }  
 
   const ml1Text = document.querySelector('.ml1 .letters');
+
 if (ml1Text) {
   ml1Text.innerHTML = ml1Text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   anime.timeline({ loop: false })
@@ -79,6 +79,7 @@ if (ml1Text) {
 }
 
 const ml2Text = document.querySelector('.ml2');
+
 if (ml2Text) {
   ml2Text.innerHTML = ml2Text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   anime.timeline({ loop: false })
@@ -100,12 +101,12 @@ if (ml2Text) {
       content.innerHTML = '';
       let isVideo = false;
 
-      if (item.tagName.toLowerCase() === 'img') {
-        const img = document.createElement('img');
+  if (item.tagName.toLowerCase() === 'img') {
+  const img = document.createElement('img');
         img.src = item.src;
         content.appendChild(img);
-      } else if (item.tagName.toLowerCase() === 'video') {
-        const video = document.createElement('video');
+  } else if (item.tagName.toLowerCase() === 'video') {
+  const video = document.createElement('video');
         video.src = item.querySelector('source').src;
         video.controls = true;
         video.autoplay = true;
@@ -114,7 +115,7 @@ if (ml2Text) {
         isVideo = true;
       }
 
-      if (isVideo && !audio.paused) audio.volume = 0.1;
+  if (isVideo && !audio.paused) audio.volume = 0.1;
 
       lightbox.setAttribute('data-jenis', isVideo ? 'video' : 'gambar');
       lightbox.style.display = 'flex';
@@ -125,7 +126,7 @@ if (ml2Text) {
     if (e.target === lightbox) {
       lightbox.style.display = 'none';
       content.innerHTML = '';
-      if (lightbox.getAttribute('data-jenis') === 'video' && !audio.paused) {
+    if (lightbox.getAttribute('data-jenis') === 'video' && !audio.paused) {
         audio.volume = 1;
       }
       lightbox.removeAttribute('data-jenis');
@@ -192,3 +193,4 @@ $(document).ready(() => {
     }, 4000);
   });
 });
+ 
