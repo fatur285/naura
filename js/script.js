@@ -238,7 +238,7 @@ $(document).ready(() => {
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
-    $("#kontener3").fadeIn("4000");
+    $("#kontener3").fadeIn(4000);
 
     audio.loop = true;
     audio.volume = 1;
