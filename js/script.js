@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
-      "Mam siangnya jangan lupa! gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
+      "Mam siang jangan lupa! gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     ucapan = "Malem Naura!";
     isiUcapan =
-      "Jangan sering begadang ya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
+      "Jangan sering begadang ya, kita gatau penyakit bisa datang kapan aja.<br/> Sehat selalu <3";
   }
 
   if (ucapanElement && isiUcapanElement) {
