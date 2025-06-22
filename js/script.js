@@ -253,7 +253,7 @@ $(document).ready(() => {
 
       Swal.fire({
         title: "🎈",
-        text: "Semoga kepergian aku kali ini jadi yang terakhir ya... Ga pernah boong kalo aku selalu sayang sama kamu💓",
+        text: "Semoga kepergian aku kali ini jadi yang terakhir ya... Ga pernah boong kalo fatur selalu sayang sama naura💗",
         confirmButtonText: "Close",
         allowOutsideClick: false,
       });
