@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 body,
 html {
   -webkit-tap-highlight-color: transparent;
   background-color: #ffe6f2;
-  background-image: 
-    url('../gambar/bgk2.jpg'),
+  background-image: url("../gambar/bgk2.jpg"),
     linear-gradient(to bottom right, #ffe6f2, #ffcce0);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -32,7 +31,7 @@ html {
   background: #ffffffc4;
   border: 1px solid #ff0080;
   display: block;
-  width: 200vh;
+  width: 300vh;
   padding: 10px;
   border-radius: 10px;
 }
@@ -44,7 +43,7 @@ html {
   border: 2px solid #ff0080;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: 0.3s;
 }
 
@@ -128,7 +127,7 @@ section.after {
   color: #141414;
   font-weight: 600;
   font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
   line-height: 85px;
@@ -154,7 +153,7 @@ section.after {
 .ml1 {
   margin-top: 5%;
   color: #141414;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 1.2em;
 }
@@ -186,7 +185,7 @@ section.after {
 }
 .ml2 {
   color: #141414;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 1em;
 }
@@ -221,7 +220,7 @@ section.after {
 .isiucapan,
 #kontener3 #waktu {
   color: #141414;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .judul_ini {
@@ -282,7 +281,6 @@ section.after {
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
 
 .toggle-button:hover {
   transform: scale(1.1);
@@ -365,7 +363,7 @@ section.after {
 }
 
 .preview-teks {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #141414;
   margin-top: -10px;
   font-size: 1.1rem;
@@ -408,10 +406,11 @@ video.foto-galeri {
   display: none;
   position: fixed;
   z-index: 1000;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
 }
@@ -470,7 +469,7 @@ video.foto-galeri {
 }
 .modal h2 {
   color: #141414;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 450;
   font-size: 1.2em;
 }
