@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (jam >= 6 && jam < 12) {
     ucapan = "Pagi Naura!";
     isiUcapan =
-      "Awali pagi kamu dengan hal yg positif... jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> be happy <3";
+      "Awali pagi kamu dengan hal yg positif... jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> semangat!!! <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
@@ -238,7 +238,7 @@ $(document).ready(() => {
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
-    $("#kontener3").fadeIn(4000);
+    $("#kontener3").fadeIn(3000);
 
     audio.loop = true;
     audio.volume = 1;
