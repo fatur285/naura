@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (jam >= 6 && jam < 12) {
     ucapan = "Pagi Naura!";
     isiUcapan =
-      "Awali pagi kamu dengan hal yg positif... jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> be happy <3";
+      "Awali pagi kamu dengan kegiatan positif... <br/> jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> Semangat <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
-      "Mam siangnya jangan lupa! gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
+      "Mam siang jangan lupa! <br/> Gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     ucapan = "Malem Naura!";
     isiUcapan =
-      "Jangan sering begadang ya, kita gatau penyakit bisa datang kapan aja & disaat apa aja <br/> Sehat selalu <3";
+      "Jangan sering begadang ya... <br/> kita gatau penyakit bisa datang kapan aja. <br/> Sehat selalu <3";
   }
 
   if (ucapanElement && isiUcapanElement) {
@@ -234,10 +234,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(() => {
   const popupSound = new Audio("audio/popup.mp3");
+  popupSound.volume = 0.5;
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
-    $("#kontener3").fadeIn("4000");
+    $("#kontener3").fadeIn(3000);
 
     audio.loop = true;
     audio.volume = 1;
@@ -253,7 +254,7 @@ $(document).ready(() => {
 
       Swal.fire({
         title: "🎈",
-        text: "Semoga kepergian aku kali ini jadi yang terakhir ya... Ga pernah boong kalo aku selalu sayang sama kamu💓",
+        text: "Semoga kepergian aku kali ini jadi yang terakhir ya... Ga pernah boong kalo Fatur selalu sayang sama Naura.",
         confirmButtonText: "Close",
         allowOutsideClick: false,
       });
