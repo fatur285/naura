@@ -235,9 +235,11 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(() => {
   const popupSound = new Audio("audio/popup.mp3");
   popupSound.volume = 0.5;
+  popupSound.volume = 0.5;
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
+    $("#kontener3").fadeIn(3000);
     $("#kontener3").fadeIn(3000);
 
     audio.loop = true;
