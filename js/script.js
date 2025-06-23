@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
-      "Jangan lupa mandi ih... BUSSU KAMU!! <br/> Bahagia terus mantan orang kesayangan aku <3";
+      "Mandii mandiiii... BUSSU KAMU!! <br/> Bahagia terus mantan orang kesayangan aku <3";
   } else {
     ucapan = "Malem Naura!";
     isiUcapan =
-      "Jangan sering begadang ya... <br/> kita gatau penyakit bisa datang kapan aja. <br/> Sehat selalu <3";
+      "Kurangin begadang ya... <br/> Jaga kesehatan kamu! kamu boleh ga sayang aku tapi ingat, selalu sayang sama diri kamu sendiri. <br/> Sehat selalu <3";
   }
 
   if (ucapanElement && isiUcapanElement) {
@@ -235,11 +235,9 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(() => {
   const popupSound = new Audio("audio/popup.mp3");
   popupSound.volume = 0.5;
-  popupSound.volume = 0.5;
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
-    $("#kontener3").fadeIn(3000);
     $("#kontener3").fadeIn(3000);
 
     audio.loop = true;
