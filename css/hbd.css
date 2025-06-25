@@ -1,76 +1,134 @@
 .ultah-theme {
-    background: linear-gradient(to right, #ff2bb8, #ff2090) !important;
-    background-size: 400% 400%;
-    animation: bgMove 10s ease infinite;
-  }
-  
-  @keyframes bgMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .ultah-theme .ucapan,
-  .ultah-theme .ml1,
-  .ultah-theme .isiucapan,
-  .ultah-theme .ml2,
-  .ultah-theme .ml1 .line1,
-  .ultah-theme .ml1 .line2 {
-  }
+  background: linear-gradient(to right, #ff379e, #ff2090) !important;
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+}
 
-
-  .ultah-theme .judul_ini,
-  .ultah-theme .ucapan,
-  .ultah-theme .ml1,
-  .ultah-theme .isiucapan,
-  .ultah-theme .ml2 {
-    color: #ffffff !important;
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .ultah-theme .hamburger span,
-  .ultah-theme .ml1 .line1,
-  .ultah-theme .ml1 .line2 {
-    background-color: #ffffff;
+  50% {
+    background-position: 100% 50%;
   }
-
-  .ultah-theme .kontener2 {
-    background: black;
+  100% {
+    background-position: 0% 50%;
   }
+}
 
-  .ultah-theme .kontener2 h1 {
-    display: none;
-  }
+.ultah-theme .kontener2 {
+  background: black;
+}
 
-  .ultah-theme .tombol {
-  background: #ffffff00;
+.ultah-theme .tombol {
+  position: relative;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0;
+  padding: 12px 14px;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  background: transparent;
+  z-index: 1;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.ultah-theme .tombol::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ff00aa;
+  z-index: 1;
+  transition: 0.8s ease;
+  width: 0;
+}
+
+.ultah-theme .tombol::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ff00aa;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.4s ease;
+  height: 0;
+}
+
+.ultah-theme .tombol:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }
 
 .ultah-theme .tombol:hover {
-  background: rgba(255, 255, 255, 0.192);
+  background: transparent !important;
   color: #000000;
-  border-color: #ffffff;
 }
 
-   .ultah-theme .kontener3 {
-    background: transparent !important;
-  }
+.ultah-theme .tombol:hover::before {
+  width: 100%;
+}
 
-  .ultah-theme .tombol-modal i {
-    color: white;
-  }
-  
-  .ultah-theme .backgroundVideo {
-    display: none;
-  }
-  
-  .ultah-theme .preview-teks,
-  .ultah-theme .preview-galeri {
-    display: none;
-  }
-  
-  .ultah-theme .dropdown button {
-    background-color: #40404038 !important;
-    border-color: #ffffff;
-  }
+.ultah-theme .kontener3 {
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  padding-top: 0;
+  text-align: center;
+  position: relative;
+}
+
+.ultah-theme .judul_ini,
+.ultah-theme .ucapan,
+.ultah-theme .isiucapan {
+  color: #ffffff !important;
+}
+
+.ultah-theme .isihalaman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ultah-theme .hamburger span {
+  background-color: #ffffff;
+}
+
+.ultah-theme .tombol-modal i {
+  color: white;
+}
+
+.ultah-theme .backgroundVideo {
+  display: none;
+}
+
+.ultah-theme .kontener2 h1,
+.ultah-theme .preview-teks,
+.ultah-theme .preview-galeri,
+.ultah-theme .line,
+.ultah-theme .ml1,
+.ultah-theme .text-wrapper,
+.ultah-theme .letters,
+.ultah-theme .ml2,
+.ultah-theme .memek,
+.ultah-theme .memek-ig {
+  display: none;
+}
+
+.ultah-theme .dropdown button {
+  background-color: #40404038 !important;
+  border-color: #ffffff;
+}

@@ -17,14 +17,16 @@
     />
   </head>
   <body>
-    <!-- Gabut doang kontol
-    Ngapa jadi ribet gini memek dah
-    Kontol lu semua -->
+    <!-- Naura pelacur ahahahaha -->
     <div id="formBalasanModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="tutupFormBalasan()">&times;</span>
         <h2>Feedback</h2>
-        <form action="https://formspree.io/f/manoolkv" method="POST">
+        <form
+          id="balasanForm"
+          action="https://formspree.io/f/manoolkv"
+          method="POST"
+        >
           <input type="hidden" name="_captcha" value="false" />
           <textarea
             name="pesan"
@@ -207,6 +209,7 @@
     <script>
       lucide.createIcons();
     </script>
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
 
     <script>
@@ -218,11 +221,10 @@
         if (tanggal === 6 && bulan === 3) {
           document.body.classList.add("ultah-theme");
 
-          const kontener2 = document.getElementById("kontener2");
-          const kontener3 = document.getElementById("kontener3");
           const ucapan = document.getElementById("ucapan");
           const isiUcapan = document.getElementById("isiucapan");
           const judul = document.querySelector(".judul_ini");
+          const tombol = document.getElementById("tombol");
 
           if (ucapan) {
             ucapan.textContent = "Happy Birthday Naura";
@@ -242,6 +244,10 @@
 
           if (judul) {
             judul.textContent = "Special Day";
+          }
+
+          if (tombol) {
+            tombol.textContent = "Click Here Pelacur";
           }
         }
       });
