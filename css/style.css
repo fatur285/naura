@@ -43,7 +43,7 @@ html {
   border: 2px solid #ff0080;
   border-radius: 10px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   transition: 0.3s;
 }
 
@@ -127,7 +127,7 @@ section.after {
   color: #141414;
   font-weight: 600;
   font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   line-height: 85px;
@@ -153,7 +153,7 @@ section.after {
 .ml1 {
   margin-top: 5%;
   color: #141414;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 900;
   font-size: 1.2em;
 }
@@ -185,7 +185,7 @@ section.after {
 }
 .ml2 {
   color: #141414;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 900;
   font-size: 1em;
 }
@@ -232,7 +232,7 @@ section.after {
 .isiucapan,
 #kontener3 #waktu {
   color: #141414;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .judul_ini {
