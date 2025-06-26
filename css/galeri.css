@@ -1,7 +1,7 @@
 section.halaman4 {
   background: #e2e2e2bd;
   z-index: 2;
-  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .preview-galeri {

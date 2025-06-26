@@ -1,0 +1,47 @@
+section.halaman5 {
+  background: #e2e2e2bd;
+  z-index: 2;
+}
+
+.private-button {
+  position: absolute;
+  top: 40px;
+  right: 6px;
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 999;
+  color: #ffffff;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.private-button:hover {
+  transform: scale(1.1);
+}
+
+.private {
+  column-count: 3;
+  padding: 15px;
+}
+
+.foto-private,
+video.foto-private {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  margin: 0 auto 18px auto;
+}
+
+.foto-private:hover {
+  transform: scale(1.03);
+}

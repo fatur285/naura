@@ -51,19 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
   if (jam >= 6 && jam < 12) {
     ucapan = "Pagi Naura!";
     isiUcapan =
-      "Awali pagi kamu dengan kegiatan positif... <br/> jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> Semangat <3";
+      "Awali pagi kamu dengan kegiatan positif... <br> jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> Semangat <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
-      "Mam siang jangan lupa! <br/> Gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
+      "Mam siang jangan lupa! <br> Gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
-      "Mandii mandiiii... BUSSU KAMU!! <br/> Bahagia terus mantan orang kesayangan aku <3";
+      "Mandii mandiiii... BUSSU KAMU!! <br> Bahagia terus mantan orang kesayangan aku <3";
   } else {
     ucapan = "Malem Naura!";
     isiUcapan =
-      "Kurangin begadang ya... <br/> Jaga kesehatan kamu! kamu boleh ga sayang aku tapi ingat, selalu sayang sama diri kamu sendiri. <br/> Sehat selalu <3";
+      "Kurangin begadang ya... <br> Jaga kesehatan kamu! kamu boleh ga sayang aku tapi ingat, selalu sayang sama diri kamu sendiri. <br/> Sehat selalu <3";
   }
 
   if (ucapanElement && isiUcapanElement) {
@@ -155,11 +155,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const lightbox = document.getElementById("lightbox");
-  const content = lightbox.querySelector(".lightbox-content");
-
-  document.querySelectorAll(".foto-galeri").forEach((item) => {
+  document.querySelectorAll(".foto-galeri, .foto-private").forEach((item) => {
     item.addEventListener("click", () => {
+      const lightbox = document.getElementById("lightbox");
+      const content = lightbox.querySelector(".lightbox-content");
       content.innerHTML = "";
       let isVideo = false;
 
@@ -184,14 +183,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-      content.innerHTML = "";
-      if (lightbox.getAttribute("data-jenis") === "video" && !audio.paused) {
+  document.getElementById("lightbox").addEventListener("click", function (e) {
+    if (e.target === this) {
+      this.style.display = "none";
+      this.querySelector(".lightbox-content").innerHTML = "";
+      if (this.getAttribute("data-jenis") === "video" && !audio.paused) {
         audio.volume = 1;
       }
-      lightbox.removeAttribute("data-jenis");
+      this.removeAttribute("data-jenis");
     }
   });
 
@@ -233,8 +232,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 $(document).ready(() => {
-  const popupSound = new Audio("audio/popup.mp3");
-  popupSound.volume = 0.5;
+  // const popupSound = new Audio("audio/popup.mp3");
+  // popupSound.volume = 0.5;
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
@@ -245,19 +244,24 @@ $(document).ready(() => {
     audio.play();
 
     setTimeout(() => {
-      audio.volume = 0.2;
-      popupSound.play();
+      // audio.volume = 0.2;
+      // popupSound.play();
 
-      popupSound.onended = () => {
-        audio.volume = 1;
-      };
+      // popupSound.onended = () => {
+      //   audio.volume = 1;
+      // };
 
       Swal.fire({
         title: "🎈",
         text: "Semoga kepergian aku kali ini jadi yang terakhir ya... Ga pernah boong kalo Fatur selalu sayang sama Naura.",
         confirmButtonText: "Close",
         allowOutsideClick: false,
+        customClass: {
+          popup: "my-swal-popup",
+          title: "my-swal-title",
+          confirmButton: "my-swal-confirm",
+        },
       });
-    }, 4000);
+    }, 6000);
   });
 });

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/hbd.css" />
     <link rel="stylesheet" href="css/galeri.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/private.css" />
     <link rel="stylesheet" href="css/responsif.css" />
     <link
       rel="stylesheet"
@@ -17,11 +18,12 @@
     />
   </head>
   <body>
-    <!-- Naura pelacur ahahahaha -->
     <div id="formBalasanModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="tutupFormBalasan()">&times;</span>
-        <h2>Feedback</h2>
+        <div class="modal-header">
+          <h2>Feedback</h2>
+          <span class="close" onclick="tutupFormBalasan()">&times;</span>
+        </div>
         <form
           id="balasanForm"
           action="https://formspree.io/f/manoolkv"
@@ -78,6 +80,7 @@
         <button onclick="PindahKeHalaman(0)" class="btn">🩷</button>
         <button onclick="PindahKeHalaman(1)" class="btn">💗</button>
         <button onclick="PindahKeHalaman(2)" class="btn">💝</button>
+        <button onclick="PindahKeHalaman(4)" class="btn">🔐</button>
       </div>
 
       <h1 class="judul_ini">Naura Azura Velsya</h1>
@@ -195,11 +198,38 @@
               <source src="galeri/video4.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="lightbox" id="lightbox">
-            <div class="lightbox-content"></div>
+        </section>
+
+        <section class="halaman5 dalemnya_halaman">
+          <button class="btn-kembali" onclick="kembaliKeMenu()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h1 class="judul_halaman">Private</h1>
+          <div class="private">
+            <img
+              src="private/gambar1.jpg"
+              alt="Selingkuh"
+              class="foto-private"
+            />
+            <img
+              src="private/gambar2.jpg"
+              alt="Selingkuh"
+              class="foto-private"
+            />
+            <img
+              src="private/gambar3.jpg"
+              alt="Selingkuh"
+              class="foto-private"
+            />
+            <video class="foto-private" muted>
+              <source src="private/video1.mp4" type="video/mp4" />
+            </video>
           </div>
         </section>
       </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
