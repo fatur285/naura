@@ -1,6 +1,6 @@
 @media (min-width: 300px) and (max-width: 640px) {
   .ml1 {
-    margin-top: 15%;
+    margin-top: 0;
   }
 
   .kontener3 {
@@ -50,13 +50,12 @@
   .judul_ini {
     top: 13px;
     font-size: 1.5rem;
-    text-align: center;
     width: 100%;
   }
 
   .isi-halaman {
     font-size: 1rem;
-    padding: 0 15px;
+    padding: 15px 15px;
     max-width: 100%;
   }
 
@@ -70,5 +69,8 @@
 
   .isiucapan {
     font-size: 1rem;
+  }
+  .preview-galeri {
+    gap: 8px;
   }
 }
