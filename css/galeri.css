@@ -6,19 +6,37 @@ section.halaman4 {
 
 .preview-galeri {
   display: flex;
+  flex-direction: row;
+  /* background: rgba(255, 255, 255, 0.2); */
+  width: 90dvw;
+  height: 17dvh;
   justify-content: center;
-  gap: 8px;
-  margin-top: 30px;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
   cursor: pointer;
   z-index: 1;
 }
 
 .preview-galeri img {
-  width: 70px;
-  height: 70px;
+  width: 30vw;
+  height: 14dvh;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.preview-galeri img:nth-child(1),
+.preview-galeri img:nth-child(2),
+.preview-galeri img:nth-child(3) {
+  border: none;
+}
+
+.preview-galeri img:nth-child(1),
+.preview-galeri img:nth-child(3) {
+  width: 19dvw;
+  height: 12dvh;
+  opacity: 0.5;
 }
 
 .preview-galeri img:hover {
@@ -26,15 +44,8 @@ section.halaman4 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.preview-teks {
-  font-family: Arial, sans-serif;
-  color: #141414;
-  margin-top: -10px;
-  font-size: 1.1rem;
-  text-align: center;
-  z-index: 2;
-}
 
+/* ini galerinya mnyt */
 .galeri {
   column-count: 3;
   padding: 15px;
