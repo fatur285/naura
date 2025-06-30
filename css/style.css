@@ -38,9 +38,9 @@ html {
 
 .kontener2 .tombol {
   padding: 10px 25px;
-  background: linear-gradient(90deg, #ff2090c4 0%, #ff7eb3c4 100%);
-  color: #fff;
-  border: 2px solid white;
+  background: linear-gradient(90deg, #ffffffc4 0%, #ff7eb3c4 100%);
+  color: #ff0080;
+  border: 2px solid #ff0080;
   border-radius: 12px;
   font-weight: bold;
   font-family: Arial, sans-serif;
@@ -70,9 +70,9 @@ html {
 
 .kontener2 .tombol:hover,
 .kontener2 .tombol:focus {
-  background: linear-gradient(90deg, #ff7eb3 0%, #ff2090 100%);
-  border-color: black;
-  color: black;
+  background: linear-gradient(90deg, #ff7eb3 0%, #ffffffc4 100%);
+  border-color: #ff0080;
+  color: #ff0080;
   box-shadow: 0 8px 32px rgba(255, 32, 144, 0.25);
 }
 
@@ -388,7 +388,7 @@ section.after {
 
 .memek,
 .memek-ig {
-  padding: 5px 5px;
+  padding: 4px 5px;
   font-size: 1.4rem;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
   display: flex;
@@ -458,5 +458,4 @@ section.after {
   background: linear-gradient(90deg, #ff7eb3 0%, #ff2090 100%) !important;
   box-shadow: 0 8px 32px rgba(255, 32, 144, 0.25);
   color: #fff !important;
-  }
-  
+}

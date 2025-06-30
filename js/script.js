@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (jam >= 6 && jam < 12) {
     ucapan = "Pagi Naura!";
     isiUcapan =
-      "Awali pagi kamu dengan kegiatan positif... <br> jangan terlalu mikirin cinta, karena cinta yg tepat datang pada orang yg tepat. <br/> Semangat <3";
+      "Awali pagi kamu dengan kegiatan positif... <br> jangan terlalu mikirin cinta, apa lagi ngerebut cinta cewe lain dengan alasan cuma teman atau yg katanya cuma dianggap adek padahal sendirinya udah punya cowo. <br/> hahaha";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
-      "Mam siang jangan lupa! <br> Gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
+      "Mam siang jangan lupa... <br> Gimana hari-hari tanpa aku nya? aku harap kamu baik-baik aja ya disana. <br/> Semangat beraktivitas <3";
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
