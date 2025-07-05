@@ -232,8 +232,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 $(document).ready(() => {
-  // const popupSound = new Audio("audio/popup.mp3");
-  // popupSound.volume = 0.5;
+  // p
+   const popupSound = new Audio("audio/popup.mp3");
+   popupSound.volume = 0.5;
+  // p
 
   $("#tombol").click(() => {
     $("#kontener2").fadeOut();
@@ -244,16 +246,18 @@ $(document).ready(() => {
     audio.play();
 
     setTimeout(() => {
-      // audio.volume = 0.2;
-      // popupSound.play();
+      // p
+       audio.volume = 0.2;
+       popupSound.play();
 
-      // popupSound.onended = () => {
-      //   audio.volume = 1;
-      // };
+       popupSound.onended = () => {
+         audio.volume = 1;
+       };
+      // p
 
       Swal.fire({
         title: "🌷",
-        text: "Sayangg...😓",
+        text: "Sayangg aku kangennn 😓",
         confirmButtonText: "Close",
         allowOutsideClick: false,
         customClass: {
@@ -262,6 +266,6 @@ $(document).ready(() => {
           confirmButton: "my-swal-confirm",
         },
       });
-    }, 6000);
+    }, 4000);
   });
 });
