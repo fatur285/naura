@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (jam > 15 && jam <= 18) {
     ucapan = "Sore Naura!";
     isiUcapan =
-      "Mandii mandiiii... BUSSU KAMU!! <br> Bahagia terus mantan orang kesayangan aku <3";
+      "Mandii mandiiii... BUSSU KAMU!! <br> Bahagia terus orang kesayangan aku <3";
   } else {
     ucapan = "Malem Naura!";
     isiUcapan =
