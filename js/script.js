@@ -1,11 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const today = new Date();
   const jam = today.getHours();
-  const isUltah = today.getDate() === 6 && today.getMonth() === 3;
+  const tanggal = today.getDate();
+  const bulan = today.getMonth();
+  const isUltah1 = tanggal === 6 && bulan === 3;
+  const isUltah2 = tanggal === 2 && bulan === 7;
 
   let backSound = "";
-  if (isUltah) {
+  if (isUltah1) {
     backSound = "audio/hbd.mp3";
+  } else if (isUltah2) {
+    backSound = "audio/hbd2.mp3";
   } else {
     backSound = jam >= 6 && jam < 18 ? "audio/day.mp3" : "audio/night.mp3";
   }
@@ -50,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (jam >= 6 && jam < 12) {
     ucapan = "Pagi Naura!";
-    isiUcapan =
-      "Awali pagi kamu dengan kegiatan positif... <br> i miss u <3";
+    isiUcapan = "Awali pagi kamu dengan kegiatan positif... <br> i miss u <3";
   } else if (jam >= 12 && jam <= 15) {
     ucapan = "Siang Naura!";
     isiUcapan =
@@ -233,8 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(() => {
   // p
-   const popupSound = new Audio("audio/popup.mp3");
-   popupSound.volume = 0.5;
+  const popupSound = new Audio("audio/popup.mp3");
+  popupSound.volume = 0.5;
   // p
 
   $("#tombol").click(() => {
@@ -247,17 +251,17 @@ $(document).ready(() => {
 
     setTimeout(() => {
       // p
-       audio.volume = 0.2;
-       popupSound.play();
+      audio.volume = 0.2;
+      popupSound.play();
 
-       popupSound.onended = () => {
-         audio.volume = 1;
-       };
+      popupSound.onended = () => {
+        audio.volume = 1;
+      };
       // p
 
       Swal.fire({
         title: "🌷",
-        text: "Sayangg aku kangennn 😓",
+        html: "Aku yakin cinta aku ga salah orang... <br> I Love U ♥",
         confirmButtonText: "Close",
         allowOutsideClick: false,
         customClass: {

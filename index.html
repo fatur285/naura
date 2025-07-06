@@ -124,7 +124,11 @@
             style="width: 200px; height: 200px"
           />
           <div class="ucapan1">
-            <p class="isiucapan1">Kamu jahat nau.</p>
+            <p class="isiucapan1">
+              Sejauh apapun kita melangkah untuk ga bareng lagi, tetap selalu
+              ingat, selalu ada space untuk naura didalam hati fatur. <br />
+              Sayang naura selamanya <3
+            </p>
           </div>
         </section>
 
@@ -160,9 +164,12 @@
           />
           <div class="ucapan3">
             <p class="isiucapan3">
-              Liat aja nanti kalo aku udah move on, <br>
-              aku bakal lupain kamu mulai dari muka sampai kota kamu bakal aku lupain. <br>
-              Jangan sok keras kamu naura!
+              Wanita favorit, manis, lucu, terutama selalu cantik dimata aku.
+              <br />
+              hahahaha... <br />
+              Gaada kata-kata yang bisa jelasin betapa sempurnanya naura dimata
+              aku. <br /><br />
+              I Love U & I'll Miss U Naura Azura Velsya
             </p>
           </div>
         </section>
@@ -233,13 +240,18 @@
     <script src="js/form.js"></script>
     <script src="js/script.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G94PGHSQBP"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G94PGHSQBP"
+    ></script>
     <script>
-       window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-          gtag('config', 'G-G94PGHSQBP');
+      gtag("config", "G-G94PGHSQBP");
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -261,14 +273,14 @@
 
           if (isiUcapan) {
             isiUcapan.innerHTML = `
-            Wish u all the best...<br>
-            Percaya deh, lewat page ini aku jadi orang pertama yg ngucapin HBD buat kamu setiap tahun!<br><br>
-            Ngga banyak kata yang bisa aku ucapin...<br>
-            cuma berharap di umur kamu yg sekarang ini,
-            kamu bisa berubah jadi yg lebih baik lagi dari yang sebelumnya ya.<br><br>
-            Selamat ulang tahun mantan cewe favorit kesayangan aku! <br><br>
-            #GaBakalLupaKamuPernahNyakitinAku
-          `;
+              Wish u all the best...<br>
+              Percaya deh, lewat page ini aku jadi orang pertama yg ngucapin HBD buat kamu setiap tahun!<br><br>
+              Ngga banyak kata yang bisa aku ucapin...<br>
+              cuma berharap di umur kamu yg sekarang ini,
+              kamu bisa berubah jadi yg lebih baik lagi dari yang sebelumnya ya.<br><br>
+              Selamat ulang tahun mantan cewe favorit kesayangan aku! <br><br>
+              #GaBakalLupaKamuPernahNyakitinAku
+            `;
           }
 
           if (judul) {
@@ -276,7 +288,40 @@
           }
 
           if (tombol) {
-            tombol.textContent = "Click Here Pelacur";
+            tombol.textContent = "Click Here";
+          }
+        } else if (tanggal === 2 && bulan === 7) {
+          document.body.classList.add("ultah-theme-2");
+
+          const ucapan = document.getElementById("ucapan");
+          const isiUcapan = document.getElementById("isiucapan");
+          const judul = document.querySelector(".judul_ini");
+          const tombol = document.getElementById("tombol");
+
+          if (ucapan) {
+            ucapan.textContent = "Tau ga hari ini hari apa?";
+          }
+
+          if (isiUcapan) {
+            isiUcapan.innerHTML = `
+              Hari ini hari ulang tahun aku! <br>
+              Ga kerasa ya, semakin hari umur aku semakin bertambah. <br>
+              Aku harap dihari ulang tahun aku ini, bener-bener jadi hari paling bahagia dalam hidup aku,
+              rasanya pengen banget ngerayain hari spesial ini bareng orang kesayangan aku. <br>
+              Ya, siapa lagi kalo bukan kamu manusia favorit sekaligus kesayangan aku! <br>
+              Tapi mau gimana lagi, takdir berkata lain, kita udah gabisa bareng lagi kayak dulu. <br>
+              Berharap banget datang keajaiban, kamu hadir & ngucapin Happy Birthday buat aku:( <br>
+              Udah ah, aku ga kuat buat ngelanjutinnya... <br>
+              Selamat bahagia tanpa aku, ingat! aku selalu sayang sama naura.
+            `;
+          }
+
+          if (judul) {
+            judul.textContent = "Special Day";
+          }
+
+          if (tombol) {
+            tombol.textContent = "Click Here";
           }
         }
       });
