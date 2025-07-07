@@ -3,7 +3,7 @@
 ```Suka - suka saya 😘```
 
 ## Demo site
-https://fatur285.github.io/naura
+[Naura](https://fatur285.github.io/sweetie-princess/)
 
 ## inspired
 <p>
