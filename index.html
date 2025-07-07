@@ -17,6 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <style>
+    input, button {
+      padding: 10px;
+      font-size: 1rem;
+      margin-top: 1em;
+    }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0T91F3NNR"></script>
     <script>
@@ -28,6 +35,13 @@
     </script>
   </head>
   <body>
+    <h1>Hai kamu yang spesial 💕</h1>
+    <p>Jawab dulu ya pertanyaan ini:</p>
+
+    <label for="jawaban">Apa nama panggilan sayang dari kamu ke aku?</label><br>
+    <input type="text" id="jawaban" placeholder="contoh: sayang"><br>
+    <button onclick="cekJawaban()">Masuk</button>
+    
     <div id="formBalasanModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -324,5 +338,17 @@
         }
       });
     </script>
+    <script>
+    function cekJawaban() {
+  const input = document.getElementById("jawaban").value.toLowerCase().trim();
+  const passwordList = ["sayang", "beb", "cintaku"];
+
+  if (passwordList.includes(input)) {
+    document.getElementById("halamanUtama").style.display = "block";
+  } else {
+    alert("Ups... salah jawaban 🥺 Coba ingat-ingat lagi ya.");
+  }
+}
+  </script>
   </body>
 </html>
