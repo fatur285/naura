@@ -43,19 +43,18 @@
 <body>
   <div class="box">
     <h1>Ngapain?</h1>
-    <p>Lo naura bukan?</p>
-    <label for="jawaban">Pacar gue manggil gue apa?</label><br>
-    <input type="text" id="jawaban" placeholder="Type..."><br>
+    <label for="jawaban">Lo naura bukan? <br> Pacar gue manggil gue apa?</label><br>
+    <input type="text" id="jawaban" placeholder="Masukkan kata kunci..."><br>
     <button onclick="cekJawaban()">Send</button>
   </div>
   <script>
     function cekJawaban() {
       const jawaban = document.getElementById("jawaban").value.trim().toLowerCase();
-      const jawabanBenar = ["bibup", "bibuppp", "bibupp", "bubub"];
+      const jawabanBenar = ["bibup", "bibuppp", "bibupp"];
       if (jawabanBenar.includes(jawaban)) {
         window.location.href = "bucin.html";
       } else {
-        alert("Lo bukan naura, sial!");
+        alert("Lo bukan naura, sial. Husss!!!");
       }
     }
   </script>
