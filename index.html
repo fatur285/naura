@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
   <title>Ga Dulu</title>
   <style>
     body {
@@ -48,10 +51,9 @@
   <script>
     function cekJawaban() {
       const jawaban = document.getElementById("jawaban").value.trim().toLowerCase();
-      // Ganti 'sayang' dengan jawaban yang benar sesuai keinginanmu
       const jawabanBenar = ["bibup", "bibuppp", "bibup", "bubub"];
       if (jawabanBenar.includes(jawaban)) {
-        window.location.href = "bucin.html"; // arahkan ke halaman utama
+        window.location.href = "bucin.html";
       } else {
         alert("Lo bukan naura, sial!");
       }
