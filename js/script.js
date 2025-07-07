@@ -261,7 +261,7 @@ $(document).ready(() => {
 
       Swal.fire({
         title: "🌷",
-        html: "Aku yakin cinta aku ga salah orang... <br> I Love U ♥",
+        html: "Aku yakin cinta aku ga salah orang. <br> I Love U ♥",
         confirmButtonText: "Close",
         allowOutsideClick: false,
         customClass: {
