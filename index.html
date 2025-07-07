@@ -45,13 +45,13 @@
     <h1>Ngapain?</h1>
     <p>Lo naura bukan?</p>
     <label for="jawaban">Pacar gue manggil gue apa?</label><br>
-    <input type="text" id="jawaban" placeholder="..."><br>
-    <button onclick="cekJawaban()">Jawab</button>
+    <input type="text" id="jawaban" placeholder="Type..."><br>
+    <button onclick="cekJawaban()">Send</button>
   </div>
   <script>
     function cekJawaban() {
       const jawaban = document.getElementById("jawaban").value.trim().toLowerCase();
-      const jawabanBenar = ["bibup", "bibuppp", "bibup", "bubub"];
+      const jawabanBenar = ["bibup", "bibuppp", "bibupp", "bubub"];
       if (jawabanBenar.includes(jawaban)) {
         window.location.href = "bucin.html";
       } else {
