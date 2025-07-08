@@ -438,24 +438,16 @@ section.after {
   font-family: Arial, sans-serif;
 }
 
-.my-swal-title {
-  color: #ff2090;
-  font-family: Arial, sans-serif;
-}
-
 .my-swal-confirm {
-  background: linear-gradient(90deg, #ff2090 0%, #ff7eb3 100%) !important;
-  color: #fff !important;
-  border-radius: 8px !important;
-  font-weight: bold;
-  box-shadow: 0 4px 16px rgba(255, 32, 144, 0.15);
-  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
-  font-family: Arial, sans-serif !important;
+  background: #ff2090 !important;
+  color: #ffb6e6 !important;
+  box-shadow: 0 4px 16px rgba(255, 32, 143, 0.356) !important;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
 }
-
-.my-swal-confirm:hover,
-.my-swal-confirm:focus {
-  background: linear-gradient(90deg, #ff7eb3 0%, #ff2090 100%) !important;
-  box-shadow: 0 8px 32px rgba(255, 32, 144, 0.25);
-  color: #fff !important;
+.my-swal-confirm:hover {
+  background: #ffb6e6 !important;
+  color: #ff2090 !important;
 }

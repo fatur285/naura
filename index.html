@@ -4,59 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow">
-  <title>Ga Dulu</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #fff0f6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    .box {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px #f5a3c7;
-      padding: 2em;
-      text-align: center;
-    }
-    input, button {
-      margin-top: 1em;
-      font-size: 1em;
-      padding: 0.5em 1em;
-    }
-    button {
-      background: #ff69b4;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #ff85c2;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>Ngapain?</h1>
-    <label for="jawaban">Lo naura bukan? <br> Pacar gue manggil gue apa?</label><br>
-    <input type="text" id="jawaban" placeholder="Masukkan kata kunci..."><br>
-    <button onclick="cekJawaban()">Send</button>
-  </div>
-  <script>
-    function cekJawaban() {
-      const jawaban = document.getElementById("jawaban").value.trim().toLowerCase();
-      const jawabanBenar = ["bibup", "bibuppp", "bibupp"];
-      if (jawabanBenar.includes(jawaban)) {
-        window.location.href = "bucin.html";
-      } else {
-        alert("Lo bukan naura, sial. Husss!!!");
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Ga Dulu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff0f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
       }
-    }
-  </script>
-</body>
+      .box {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #f5a3c7;
+        padding: 2em;
+        text-align: center;
+      }
+      .box h1 {
+        color: #000000;
+        margin-top: 0;
+      }
+
+      input,
+      button {
+        margin-top: 1em;
+        font-size: 1em;
+        padding: 0.5em 1em;
+      }
+      button {
+        background: #ff69b4;
+        color: #fff;
+        box-shadow: 0 2px 10px #f5a3c7;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #ff69b4;
+        background: #fff;
+      }
+
+      /* for alert */
+      .my-swal-confirm {
+        position: absolute !important;
+        top: 5px !important;
+        right: 5px !important;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 0 !important;
+        font-size: 1.3em !important;
+        background: #fff !important;
+        color: #000000 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      .my-swal-confirm:hover {
+        color: #424242 !important;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Ngapain?</h1>
+      <label for="jawaban"
+        >Lo naura bukan? <br />
+        Pacar gue manggil gue apa?</label
+      ><br />
+      <input
+        type="text"
+        id="jawaban"
+        placeholder="Masukkan kata kunci..."
+      /><br />
+      <button onclick="cekJawaban()">Send</button>
+    </div>
+    <script>
+      function cekJawaban() {
+        const jawaban = document
+          .getElementById("jawaban")
+          .value.trim()
+          .toLowerCase();
+        const jawabanBenar = ["bibup", "bibuppp", "bibupp"];
+        if (jawabanBenar.includes(jawaban)) {
+          window.location.href = "video/bucin.html";
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Akses Ditolak!",
+            text: "Lo bukan naura, sial. Husss!!!",
+            confirmButtonText: "✖",
+            allowOutsideClick: false,
+            customClass: {
+              popup: "my-swal-popup",
+              title: "my-swal-title",
+              confirmButton: "my-swal-confirm",
+            },
+          });
+        }
+      }
+    </script>
+  </body>
 </html>

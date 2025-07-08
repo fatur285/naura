@@ -44,7 +44,6 @@ section.halaman4 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
 /* ini galerinya mnyt */
 .galeri {
   column-count: 3;
@@ -61,7 +60,6 @@ video.foto-galeri {
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #000;
   transition: transform 0.3s, box-shadow 0.3s;
   display: block;
   margin: 0 auto 18px auto;
@@ -78,7 +76,7 @@ video.foto-galeri {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;

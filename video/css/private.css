@@ -36,7 +36,6 @@ video.foto-private {
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #000;
   transition: transform 0.3s, box-shadow 0.3s;
   display: block;
   margin: 0 auto 18px auto;

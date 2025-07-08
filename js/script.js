@@ -8,11 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let backSound = "";
   if (isUltah1) {
-    backSound = "audio/hbd.mp3";
+    backSound = "../audio/hbd.mp3";
   } else if (isUltah2) {
-    backSound = "audio/hbd2.mp3";
+    backSound = "../audio/hbd2.mp3";
   } else {
-    backSound = jam >= 6 && jam < 18 ? "audio/day.mp3" : "audio/night.mp3";
+    backSound =
+      jam >= 6 && jam < 18 ? "../audio/day.mp3" : "../audio/night.mp3";
   }
   const audio = new Audio(backSound);
   audio.loop = true;
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   audio.preload = "auto";
   window.audio = audio;
 
-  const videoSrc = jam >= 6 && jam < 18 ? "video/day.mp4" : "video/night.mp4";
+  const videoSrc = jam >= 6 && jam < 18 ? "day.mp4" : "night.mp4";
   const video1 = document.getElementById("video1");
   const video2 = document.getElementById("video2");
 
@@ -237,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(() => {
   // p
-  const popupSound = new Audio("audio/popup.mp3");
+  const popupSound = new Audio("../audio/popup.mp3");
   popupSound.volume = 0.5;
   // p
 
@@ -266,10 +267,9 @@ $(document).ready(() => {
         allowOutsideClick: false,
         customClass: {
           popup: "my-swal-popup",
-          title: "my-swal-title",
           confirmButton: "my-swal-confirm",
         },
       });
-    }, 4000);
+    }, 10000);
   });
 });
