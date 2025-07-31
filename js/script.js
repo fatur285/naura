@@ -262,7 +262,7 @@ $(document).ready(() => {
 
       Swal.fire({
         title: "🌷",
-        html: "Aku yakin cinta aku ga salah orang. <br> I Love U ♥",
+        html: "Happy girlfriend day sayang!!! Tenang aja, aku masih benci kamu kok, but i still sayang sama kamu. <br> I Love U tukang selingkuh ♥",
         confirmButtonText: "Close",
         allowOutsideClick: false,
         customClass: {
