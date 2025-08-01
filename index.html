@@ -30,12 +30,12 @@
       }
 
       input,
-      a {
+      button {
         margin-top: 1em;
         font-size: 1em;
         padding: 0.5em 1em;
       }
-      a {
+      button {
         background: #ff69b4;
         color: #fff;
         box-shadow: 0 2px 10px #f5a3c7;
@@ -43,7 +43,7 @@
         border-radius: 5px;
         cursor: pointer;
       }
-      a:hover {
+      button:hover {
         color: #ff69b4;
         background: #fff;
       }
@@ -77,16 +77,15 @@
         >Lo cewe gue bukan? <br />
         Pacar gue manggil gue apa?</label
       ><br />
-      <!--input
+      <input
         type="text"
         id="jawaban"
         placeholder="Masukkan kata kunci..."
-      /><br /-->
+      /><br />
       
-      <a href="video/bucin.html">send</a>
+      <button onclick="cekJawaban()">Send</button>
     </div>
     <script>
-      // onclick="cekJawaban()"
       function cekJawaban() {
         const jawaban = document
           .getElementById("jawaban")
